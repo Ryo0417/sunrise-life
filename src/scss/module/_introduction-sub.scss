@@ -1,0 +1,88 @@
+@use 'global' as *;
+
+.introduction-sub {
+    position: relative;
+}
+
+.introduction-sub__inner {
+
+}
+
+.introduction-sub__title {
+    text-align: center;
+    font-weight: $semibold;
+    margin-bottom: rem(30);
+    
+    @include mq('md') {
+        margin-bottom: rem(50);
+       font-size: rem(44); 
+    }
+}
+
+.introduction-sub__decoration {
+    background-image :url(../img/recruit/bg_sub_title.png);
+    background-position :center;
+    background-size :cover;
+    background-repeat :no-repeat;
+    width: 60px;
+    height: 12px;
+    margin-inline: auto;
+    margin-bottom: rem(30);
+    @include mq('md') {
+        margin-bottom: rem(50); 
+    }
+}
+
+
+
+.introduction-sub__contains {
+    margin-inline: auto;
+    // あとで
+    background-color: blue;
+    width: 80%;
+    height: 300px;
+
+    @include mq('md') {
+        width: rem(1080);
+        height: rem(602);
+    }
+}
+
+.introduction-sub__bg-left {
+    background-image :url(../img/recruit/introduction/bg_document.jpg);
+    background-position :center;
+    background-size :cover;
+    background-repeat :no-repeat;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 15%;
+    width: rem(200);
+    height: rem(200);
+
+    @include mq('md') {
+       top: 10%;
+       width: rem(360); 
+       height: rem(360);
+    }
+}
+
+.introduction-sub__bg-right {
+    background-image :url(../img/recruit/introduction/bg_document.jpg);
+    background-position :center;
+    background-size :cover;
+    background-repeat :no-repeat;
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 45%;
+    width: rem(300);
+    height: rem(300);
+
+    @include mq('md') {
+        top: 50%;
+        width: rem(539); 
+        height: rem(500);
+     }
+ 
+}

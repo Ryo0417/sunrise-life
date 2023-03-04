@@ -1,0 +1,118 @@
+@use 'global' as *;
+
+.entry-sub {
+    background-image :url(../img/recruit/bg_sub_entry.jpg);
+    background-position :center;
+    background-size :cover;
+    background-repeat :no-repeat;
+    color: $white;
+}
+
+.entry-sub__inner {
+    padding-right: $padding-sp;
+    padding-left: $padding-sp;
+    padding-top: rem(150);
+    padding-bottom: rem(180);
+}
+
+.entry-sub__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @include mq('md') {
+        justify-content: space-around;
+        flex-direction: row;
+    }
+}
+
+.entry-sub__text-area {
+
+}
+
+.entry-sub__ttl {
+    text-transform: uppercase;
+    font-weight: $normal500;
+    margin-bottom: rem(30);
+    font-size: 50px;
+
+    @include mq('lg') {
+       font-size: rem(50); 
+    }
+}
+
+.entry-sub__text {
+    font-size: 14px;
+    line-height: 2;
+
+    @include mq('lg') {
+       font-size: rem(14); 
+    }
+}
+
+.entry-sub__button-area {
+    margin-top: rem(50);
+    background-color:#6072DB;
+    border-radius: rem(40);
+    padding: rem(20) rem(40);
+    font-weight: $bold;
+    white-space: nowrap;
+    font-size: 20px;
+    width: rem(280);
+    @include mq('md') {
+        font-size: rem(20);
+        width: 30%;  
+    }
+    @include mq('lg') {
+       width: 25%; 
+    }
+    @media screen and (min-width:1280px){
+        width: 20%;
+    }
+    @include mq('xl') {
+        padding: rem(20) rem(66);
+        width: rem(308);
+    }
+}
+
+
+.entry-sub__arrow-right-up {
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 16px;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.entry-sub__arrow-right-up::before,
+.entry-sub__arrow-right-up::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -130%;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+}
+
+.entry-sub__button::before {
+    width: 12px;
+    height: 2px;
+    background: $white;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+.entry-sub__button::after {
+    left: 1px;
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid $white;
+    border-right: 2px solid $white;
+}
+
+
+
+
+

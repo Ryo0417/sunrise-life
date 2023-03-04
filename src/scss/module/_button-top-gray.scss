@@ -1,0 +1,37 @@
+@use 'global' as *;
+
+.button-top-gray {
+    width: rem(50);
+    height: rem(50);
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    border: 1px solid $white;
+    top: 30%;
+    transform: translateY(-30%);
+    right: 0;
+    position: absolute;
+}
+
+.inquiry__button-jump.button-top-gray {
+    left: 0;
+}
+
+.button-top-gray::before {
+
+}
+
+.button-top-gray::after {
+
+}
+
+.button-top-gray span {
+}
+
+.button-top-gray span img{
+    position: absolute;
+    width: rem(10);
+    height: rem(10);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

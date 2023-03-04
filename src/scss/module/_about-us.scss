@@ -1,0 +1,258 @@
+@use "global" as *;
+
+.about-us {
+}
+
+.about-us__inner {
+    max-width: rem(1080);
+    width: 100%;
+    margin-inline: auto;
+    padding: 0 rem(20);
+}
+
+.about-us__contents {
+}
+
+.about-us__ttl {
+    color: $yellow;
+    font-size: 26px;
+    font-weight: $semibold;
+    text-transform: uppercase;
+    font-family: $montserrat;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    margin-bottom: 30px;
+    @include mq(md) {
+        font-size: rem(80);
+        margin-bottom: rem(50);
+    }
+}
+
+.about-us__message {
+    font-size: 17px;
+    font-weight: $bold;
+    letter-spacing: 0.1em;
+    line-height: 1.76;
+    margin-bottom: 16px;
+    @include mq(md) {
+        font-size: rem(28);
+        line-height: 1.428;
+        margin-bottom: rem(16);
+    }
+}
+
+.about-us__text {
+    font-size: 13px;
+    font-weight: $bold;
+    letter-spacing: 0.1em;
+    line-height: 2;
+    margin-bottom: 20px;
+    @include mq(md) {
+        font-size: rem(16);
+        line-height: 2.5;
+        margin-bottom: rem(54);
+    }
+}
+
+.about-us__img-main-message {
+    width: 375px;
+    height: 70px;
+    margin-left: -29px;
+    margin-bottom: -20px;
+    white-space: nowrap;
+    overflow-x:hidden;
+    @include mq(md) {
+        width: 1055px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+.about-us__img-main-message img {
+    width: 1069px;
+    max-width: inherit;
+    margin-bottom: -60px;
+    @include mq(md) {
+    }
+}
+
+
+/*======================================
+serviceコンテンツ                                        
+======================================*/
+.about-us__wrapper1 {
+    margin-bottom: 15px;
+    @include mq(md) {
+        display: flex;
+        margin-bottom: rem(30);
+    }
+}
+
+.about-us__service-inner {
+    max-width: rem(1080);
+    width: 100%;
+    margin-inline: auto;
+    padding: 0 rem(20);
+}
+
+.about-us__sub-ttl,
+.about-us__service-introduction {
+    max-width: rem(442);
+    width: 100%;
+    @include mq(md) {
+        margin-right: rem(86);
+    }
+}
+
+.about-us__sub-ttl {
+    margin-bottom: 25px;
+    color: $yellow;
+    font-size: 18px;
+    font-weight: $semibold;
+    text-transform: uppercase;
+    font-family: $montserrat;
+    @include mq(md) {
+        margin-bottom: rem(50);
+        font-size: rem(20);
+    }
+}
+
+.about-us__service-contents {
+    display: flex;
+    flex-direction: column-reverse;
+    @include mq(md) {
+        flex-direction: column;
+    }
+}
+
+.about-us__box-introduction {
+}
+
+.about-us__service-ttl {
+    font-size: rem(18);
+    font-weight: $bold;
+    letter-spacing: 0.1em;
+    margin-bottom: 25px;
+    @include mq(md) {
+        font-size: rem(18);
+        margin-bottom: rem(50);
+    }
+}
+
+.about-us__service-text1,
+.about-us__service-text3,
+.about-us__service-text4 {
+    font-size: rem(14);
+    letter-spacing: 0.1em;
+    margin-bottom: rem(20);
+}
+
+.about-us__service-text2 {
+    font-size: rem(11);
+    font-weight: $bold;
+    letter-spacing: 0.1em;
+}
+
+.about-us__service-text4 {
+    margin-bottom: rem(70);
+    @include mq(md) {
+        margin-bottom: rem(-95);
+    }
+}
+
+.about-us__img-triangle {
+    max-width: rem(300);
+    width: 100%;
+    @include mq(lg) {
+        max-width: rem(552);
+    }
+}
+
+.about-us__img-triangle img {
+}
+
+.about-us__bg-circle {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-image: url("../img/top/bg_top_circle.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    z-index: -1;
+}
+
+/*======================================
+messageコンテンツ                                        
+======================================*/
+.about-us__wrapper2 {
+    max-width: rem(1080);
+    width: 100%;
+    margin-bottom: rem(50);
+    margin-inline: auto;
+}
+
+.about-us__sub-contents {
+    @include mq(lg) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.about-us__item {
+    width: 100%;
+    @include mq(lg) {
+        width: 30%;
+        margin-right: 3%;
+    }
+}
+
+.about-us__img-message {
+    width: 100%;
+    aspect-ratio: 320px/230px;
+}
+
+.about-us__img-message img {
+    object-fit: cover;
+    margin-bottom: rem(20);
+}
+
+.about-us__each-message {
+    font-size: 16px;
+    font-weight: $bold;
+    letter-spacing: 0.05em;
+    color: #000;
+    margin-bottom: rem(22);
+    @include mq(lg) {
+        font-size: rem(18);
+    }
+}
+
+.about-us__name {
+    font-size: 16px;
+    font-weight: $bold;
+    letter-spacing: 0.1em;
+    margin-bottom: 12px;
+    @include mq(lg) {
+        font-size: rem(18);
+        margin-bottom: rem(12);
+    }
+}
+
+.about-us__position {
+    font-size: 13px;
+    font-weight: $normal;
+    letter-spacing: 0.1em;
+    @include mq(lg) {
+        font-size: rem(13);
+    }
+}
+
+/*======================================
+ボタン                                        
+======================================*/
+.about-us__item {
+    margin-bottom: rem(58);
+}

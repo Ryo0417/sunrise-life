@@ -1,0 +1,7 @@
+
+@use 'sass:meta';
+
+.page-top {
+  // ページ内のcssをここに追加する
+  @include meta.load-css('explain');
+}

@@ -1,0 +1,60 @@
+@use "global" as *;
+.sub-company__name {
+  font-size: rem(17);
+  font-weight: $semibold;
+  letter-spacing: 0.1em;
+  margin-right: rem(30);
+  margin-bottom: rem(25);
+  padding-bottom: rem(17);
+  border-bottom: 1px solid #EDEDED;
+  position: relative;
+}
+
+.sub-company__name::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: rem(57);
+  height: inherit;
+  border-bottom: 1px solid $yellow;
+}
+
+.sub-company__link {
+  display: flex;
+  align-items: center;
+  margin-bottom: rem(94);
+}
+
+.sub-company__link img {
+  width: rem(40);
+  height: rem(40);
+  margin-right: rem(12);
+}
+
+.sub-company__link a {
+  display: block;
+  font-size: rem(14);
+  font-weight: $semibold;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.sub-company__img {
+  width: calc(282 / 375) * 100%;
+  margin-left: auto;
+  position: relative;
+}
+
+.sub-company__name-img {
+  content: "";
+  position: absolute;
+  top: rem(-47);
+  left: rem(-60);
+  width: calc(236 / 375) * 100%;
+  height: rem(68);
+}
+
+.sub-company__ceo {
+  
+}

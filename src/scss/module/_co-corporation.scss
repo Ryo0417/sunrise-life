@@ -1,0 +1,80 @@
+@use "global" as *;
+
+.co-creation {
+    background-image: url(../img/top/bg_top_co_creation.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: rem(20) rem(30);
+    position: relative;
+    z-index: 1;
+    height: auto;
+    @include mq(md) {
+        padding: rem(110) rem(180);
+    }
+}
+
+.co-creation__inner {
+}
+
+.co-creation__contents {
+    max-width: rem(1080);
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: rem(50) rem(40);
+    @include mq(lg) {
+        padding: rem(117) rem(116);
+        height: rem(694);
+    }
+}
+
+.co-creation__ttl {
+    max-width: 190px;
+    width: 100%;
+    margin-bottom: 20px;
+    @include mq(lg) {
+        max-width: rem(352);
+        margin-bottom: rem(28);
+    }
+}
+
+.co-creation__text {
+    font-size: 12px;
+    font-weight: $regular;
+    letter-spacing: 0.1em;
+    line-height: 2;
+    margin-bottom: 30px;
+    @include mq(lg) {
+        font-size: rem(16);
+        margin-bottom: rem(28);
+        letter-spacing: 0.35em;
+    }
+}
+
+.co-creation__statement-ttl {
+    font-family: $montserrat;
+    font-size: 12px;
+    font-weight: $semibold;
+    letter-spacing: 0.24em;
+    line-height:1.16;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    @include mq(lg) {
+        font-size: rem(20);
+        margin-bottom: rem(11);
+        line-height: 2.1875;
+    }
+}
+
+.co-creation__statement-text {
+    font-size: 13px;
+    font-weight: $bold;
+    letter-spacing: 0.24em;
+    line-height: 2;
+    @include mq(lg) {
+        font-size: rem(20);
+        font-weight: $semibold;
+        line-height: 2.5;
+        letter-spacing: 0.24em;
+    }
+}

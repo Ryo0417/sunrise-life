@@ -1,0 +1,80 @@
+@use "global" as *;
+
+.mv {
+    width: 100%;
+}
+
+.mv__inner {
+    position: relative;
+    padding-bottom: 111px;
+    @include mq(md) {
+        padding-bottom: 0px;
+    }
+}
+
+.mv__message-overlay {
+    @include mq(md) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        height: 375px;
+    }
+}
+
+.mv__overlay {
+    display: none;
+    @include mq(md) {
+        display: block;
+        height: inherit;
+    }
+}
+
+.mv__overlay img {
+    height: inherit;
+}
+
+.mv__message-wrap {
+    max-width: 315px;
+    width: 100%;
+    margin-inline: auto;
+    margin-top: 30px;
+    @include mq(md) {
+        max-width: 100%;
+        position: absolute;
+        top: 35%;
+        left: 5%;
+        z-index: 100;
+    }
+}
+
+.mv__message {
+    font-size: 20px;
+    font-weight: $bold;
+    line-height: 1.7;
+    letter-spacing: 0.2em;
+    text-shadow: 0px 0px 15px #FFFFFF;
+    margin-bottom: 14px;
+    @include mq(md) {
+        font-size: rem(38);
+        line-height: 1.684;
+        margin-bottom: rem(20);
+    }
+}
+
+.mv__message-text {
+    font-size: 12px;
+    line-height: 2;
+    font-weight: $regular;
+    letter-spacing: 0.35em;
+    text-shadow: 0px 0px 15px #FFFFFF;
+    @include mq(md) {
+        font-size: rem(16);
+    }
+}
+
+.mv__image {
+}
+
+.mv__image img {
+}

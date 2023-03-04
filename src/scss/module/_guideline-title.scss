@@ -1,0 +1,43 @@
+@use 'global' as *;
+
+.guideline-title {
+
+}
+
+.guideline-title__main {
+        margin-inline: auto;
+        width: 50%;
+        margin-bottom: rem(10);
+    @include mq('md') {
+       width: rem(371); 
+       margin-bottom: rem(20);
+    }
+}
+
+.guideline-title__main img {
+
+}
+
+.guideline-title__sub-title {
+        text-align: center;
+        font-weight: $semibold;
+        padding-bottom: rem(30);
+        @include mq('md') {
+        padding-bottom: rem(60);
+        font-size: rem(14);
+    }
+}
+
+.guideline-title__decoration {
+        background-image :url(../img/recruit/bg_sub_title.png);
+    background-position :center;
+    background-size :cover;
+    background-repeat :no-repeat;
+    width: 60px;
+    height: 12px;
+    margin-inline: auto;
+    margin-bottom: rem(30);
+    @include mq('md') {
+        margin-bottom: rem(60); 
+    }
+}

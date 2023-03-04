@@ -1,0 +1,111 @@
+@use 'global' as *;
+
+.inquiry {
+    background-image :url(../img/top/bg_top_inquiry.png);
+    background-position :center;
+    background-size :cover;
+    background-repeat :no-repeat;
+    position: relative;
+}
+
+.inquiry::before {
+    @include mq('lg') {
+        position: absolute;
+        content: ""; 
+        width: rem(1);
+        height: 100%;
+        background-color: $white;
+        left: 53%;
+     } 
+}
+
+.inquiry__inner {
+    padding-left: $padding-sp;
+    padding-right: $padding-sp;
+    padding-top: rem(40);
+    padding-bottom: rem(40);
+    @include mq('lg') {
+       padding-left: 0;
+       padding-right: 0;
+       padding-top: rem(130); 
+       padding-bottom: rem(130);
+    }
+}
+
+.inquiry__contents {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: rem(40);
+    @include mq('lg') {
+       margin-bottom: 0;
+       width: 100%;
+       display: flex; 
+       justify-content: center;
+       gap: rem(240);
+    }
+}
+
+.inquiry__contents::before {
+}
+
+.inquiry__wrapper-left,
+.inquiry__wrapper-right {
+    
+}
+
+.inquiry__wrapper-left {
+    margin-bottom: rem(80);
+    @include mq('lg') {
+       margin-bottom: 0; 
+       width: 29%;
+    }
+}
+
+.inquiry__wrapper-left::after {
+
+}
+
+.inquiry__wrapper-right {
+    @include mq('lg') {
+       width: 21%; 
+    } 
+}
+
+.inquiry__ttl {
+    font-size: 24px;
+    margin-bottom: rem(40);
+    @include mq('lg') {
+       font-size: rem(28); 
+    }
+}
+
+.inquiry__text {
+    font-size: 16px;
+    margin-bottom: rem(40);
+    line-height: 2;
+    @include mq('lg') {
+       font-size: rem(16);
+    }
+}
+
+.inquiry__button-area {
+    position: relative;
+}
+
+
+
+.inquiry__button-text {
+    padding-left: 135%;
+    font-size: 18px;
+    font-weight: $bold;
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    align-items: center;
+    @include mq('md') {
+       padding-left: 150%; 
+    }
+    @include mq('lg') {
+       padding-left: 140%; 
+    }
+}

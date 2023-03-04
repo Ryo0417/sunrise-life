@@ -1,0 +1,87 @@
+@use 'global' as *;
+
+.vision {
+    position: relative;
+
+}
+
+.vision__inner {
+
+}
+
+.vision__contents {
+    background-color: $white;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    padding: rem(40);
+    top: 40%;
+    width: 60%;
+    height: 80%;
+    // あとでけす
+    background-color: pink;
+    @include mq('md') {
+       padding: rem(60);
+       height: 63%; 
+    }
+    @include mq('lg') {
+        padding: rem(130) rem(110);
+        height: 65%;
+        top: 30%;  
+    }
+}
+
+.vision__ttl {
+    margin-bottom: rem(40);
+    color: $blue;
+    font-size: rem(45);
+    text-transform: uppercase;
+    text-align: left;
+
+}
+
+.vision__text {
+    font-weight: $bold;
+    margin-bottom: rem(38);
+    font-size: 14px;
+    line-height: 2.8;
+    @include mq('lg') {
+        font-size: rem(16);
+    }
+}
+
+.vision__button-area {
+}
+
+.vision__button-top {
+}
+
+.vision__bg-white {
+    background-image :url(../img/top/bg_top_vision_img.jpg);
+    background-position :center;
+    background-size :cover;
+    background-repeat :no-repeat;
+    aspect-ratio:1051/895;
+    margin-left: auto;
+    width: rem(500);
+    width: 75%;
+    @include mq('lg') {
+
+    }
+}
+
+.vision__bg-blue {
+    background-image :url(../img/top/bg_top_vision_hand.jpg);
+    background-position :center;
+    background-size :cover;
+    background-repeat :no-repeat;
+    aspect-ratio: 818/508;
+    position: absolute;
+    left: 0;
+    width: rem(400);
+    top: 15%;
+    width: 60%;
+    @include mq('lg') {
+
+    }
+}

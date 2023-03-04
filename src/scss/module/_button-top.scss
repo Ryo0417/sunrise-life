@@ -1,0 +1,77 @@
+@use 'global' as *;
+
+.button-top {
+    font-size: 14px;
+    font-weight: $bold;
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+    @include mq('lg') {
+       font-size: rem(14); 
+    }
+}
+
+.recruit__button-top.button-top,
+.news__button-top.button-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-top__arrow{
+    display: inline-block;
+    border-radius: 50%;
+    width: rem(50);
+    height: rem(50);
+    position: relative;
+    margin-bottom: rem(20);
+}
+
+.about-us__button-top > .button-top__arrow,
+.vision__button-top > .button-top__arrow {
+    margin-bottom: 0;
+}
+
+.button-top__arrow--yellow{
+    background-color: $yellow;
+}
+
+.button-top__arrow--blue {
+    background-color: $blue;
+}
+
+.button-top__arrow--green {
+    background-color: $green;
+}
+
+.button-top__arrow::before{
+    content: "";
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40%;
+    width: rem(13);
+    height: rem(13);
+    border-top: 2px solid $white;
+    border-right: 2px solid $white;
+    transform: rotate(45deg); 
+}
+
+.button-top__arrow::after {
+    content: "";
+    margin: auto;
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 30%;
+    width: rem(19);
+    height: 2px;
+    background: $white;
+}
+
+.about-us__button-top > .button-top__arrow-text,
+.vision__button-top > .button-top__arrow-text {
+    padding-left: rem(20);
+}

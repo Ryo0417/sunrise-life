@@ -1,0 +1,41 @@
+@use "global" as *;
+.sub-message {
+  margin-top: rem(60);
+}
+
+.sub-message__inner {
+  padding-left: rem(30);
+}
+
+.sub-message__bg-circle {
+  background: url("../img/top/bg_top_circle.png") no-repeat center center / cover;
+  width: 100%;
+  height: rem(285);
+  padding-top: rem(60);
+  
+}
+
+.sub-message__head {
+  font-size: rem(30);
+  font-weight: $semibold;
+  color: $orange;
+  text-transform: uppercase;
+}
+
+.sub-message__reception {
+  margin-left: calc(100% - 100vw);
+  margin-bottom: rem(40);
+}
+
+.sub-message__reception img {
+  width: rem(734);
+  height: rem(50);
+}
+
+.sub-message__companies {
+  
+}
+
+.sub-message__company {
+  
+}

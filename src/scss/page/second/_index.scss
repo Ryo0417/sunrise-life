@@ -1,0 +1,7 @@
+
+@use 'sass:meta';
+
+.page-second {
+  // ページ内のcssをここに追加する
+  @include meta.load-css('sample');
+}

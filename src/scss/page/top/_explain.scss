@@ -1,0 +1,44 @@
+
+// #### 共通ルール
+
+// * 適宜改行やインデントを使用すること。
+// * 1つのプロパティは一行で管理する。
+// * 見やすさや改修を考慮し、プロパティ名はショートハンドプロパティを使用すること。
+
+// ##### NG
+
+.selector{
+	position:absolute;
+	width:900px;
+	padding-left:4px;
+	padding-top:8px;
+	padding-right:0px;
+	padding-bottom:10px;
+	margin-left:0;
+	margin-top:10px;
+	margin-right:0;
+	margin-bottom:10px;
+	}
+
+// ##### OK
+
+	.selector {
+		position: absolute;
+		width: 900px;
+		padding: 4px 8px 0 10px;
+		margin: 10px 0;
+	}
+
+
+//   ### フォントファミリー
+// フォントファミリーは以下順序で記述する。
+
+	a {
+   font-family: YuGothic, '游ゴシック', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka,	"ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  }
+	// 1. デザインカンプ指定フォント(webフォントなど)
+	// 2. windows対応フォント
+	// 3. Mac対応フォント
+	// 4. windows代替フォント
+	// 5. Mac代替フォント
+	// 6. 総称ファミリー名　（「sans-serif」「serif」など）

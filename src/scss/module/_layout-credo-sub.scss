@@ -1,0 +1,10 @@
+@use 'global' as *;
+
+.layout-credo-sub {
+    margin-bottom: rem(110);
+
+    @include mq('md') {
+        // .credo-sub__decorationでmb40取ってるので300-40
+       margin-bottom: rem(260); 
+    }
+}

@@ -1,0 +1,10 @@
+@use 'global' as *;
+
+.footer-sub {
+    background-color: #000;
+    color: $white;
+}
+
+.footer-sub > .footer__inner > .footer__page-top span {
+    background-color: $white;
+}

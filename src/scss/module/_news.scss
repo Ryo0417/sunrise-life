@@ -1,0 +1,91 @@
+@use 'global' as *;
+
+.news {
+    margin-bottom: rem(300);
+    background-color: lightblue;
+}
+
+.news__inner {
+    padding-left: $padding-sp;
+    padding-right: $padding-sp;
+}
+
+.news__contents {
+    margin-bottom: rem(40);
+    @include mq('lg') {
+       max-width: rem(1080);
+       width: 100%;
+       margin-inline: auto;
+       margin-bottom: rem(130);
+    }
+}
+
+.news__ttl {
+    color: $blue;
+    font-size: rem(45);
+    margin-bottom: rem(74);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.news__item {
+    border-bottom: 1px solid #ededed;
+    margin-top: rem(34);
+    padding-bottom: rem(34);  
+    position: relative; 
+
+    @include mq('lg') {
+       display: flex; 
+    }
+}
+
+
+.news__item + .news__item {
+
+}
+
+.news__item:last-child {
+
+}
+
+.news__date {
+    font-size: 14px;
+    @include mq('lg') {
+        margin-right: rem(30);
+        font-size: rem(14);
+    }
+}
+
+.news__wrapper {
+    width: 100%;
+    @include mq('lg') {
+       display: flex; 
+    }
+}
+
+.news__index {  
+    font-weight: $bold;
+    display: inline-block;
+    width: 70%;
+    font-size: 14px;
+    line-height: 1;
+
+    @include mq('md') {
+       width: 70%; 
+    }
+
+    @include mq('lg') {
+       width: 80%;
+        font-size: rem(14);
+    }
+}
+
+.news__button-jump {
+
+}
+
+.news__button-area {
+    display: flex;
+    justify-content: center;
+}
+
