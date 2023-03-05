@@ -39,7 +39,7 @@
             社会に実りのある変革と満足を与えます。</h3>
         </div>
       </div>
-      <div class="scrolldown"><span>Scroll</span></div>
+      <div class="scrolldown"><span></span></div>
     </div>
   </section>
 
@@ -60,13 +60,15 @@
           対話の中から相互理解を深めることで期待を超えたイノベーションの種を見つけ育みます。<br>
           我々は個々の持つ多様な「経験」「価値観」を連携・共有し<br>
           より有用な知識を創造していく社会構築の中核を担うことでコア・コンピタンスの源泉とします。<br>
-          そして、顧客の感じる価値の最大化を目指し、最適な答えを共に探す伴走者として在り続けます。</div>
+          そして、顧客の感じる価値の最大化を目指し、最適な答えを共に探す伴走者として在り続けます。
+        </div>
+        <p class="co-creation__vertical-text">
+          Value co-creation
+        </p><!-- /.co-creation__vertical-text -->
       </div>
       <!-- /.co-creation__contents -->
+
     </div>
-    <p class="co-creation__vertical-text">
-    Value co-creation
-    </p><!-- /.co-creation__vertical-text -->
   </section>
 
   <div class="about-us__bg-circle">

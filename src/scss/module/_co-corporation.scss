@@ -8,13 +8,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding: rem(27) rem(30);
-    margin-top: 350px;
     position: relative;
     z-index: 3;
     @include mq(md) {
         background-image: url(../img/top/bg_top_co_creation.jpg);
         padding: rem(110) rem(180);
-        margin-top: 0;
     }
 }
 
@@ -23,11 +21,13 @@
 
 .co-creation__contents {
     max-width: rem(1080);
+    margin: 0 auto;
     height: auto;
     background-color: rgba(255, 255, 255, 0.7);
     padding: rem(50) rem(40);
     @include mq(lg) {
         padding: rem(117) 12.5vw;
+        position: relative;
     }
 }
 
@@ -88,7 +88,7 @@
         display: block;
         position: absolute;
         top: 30%;
-        right: 3%;
+        right: -13%;
         transform: translate(-50%);
         font-family: $montserrat;
         font-size: rem(30);
