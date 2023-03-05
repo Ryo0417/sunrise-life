@@ -71,7 +71,10 @@
     background: $white;
 }
 
-.about-us__button-top > .button-top__arrow-text,
 .vision__button-top > .button-top__arrow-text {
     padding-left: rem(20);
+}
+
+.about-us__button-top > .button-top__arrow-text {
+    padding-left: rem(12);
 }

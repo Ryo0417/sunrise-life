@@ -8,7 +8,7 @@
     height: 64px;
     z-index: 100;
     @include mq(md) {
-        left: 10%;
+        left: 8%;
         bottom: 10%;
         height: rem(94);
     }
@@ -18,18 +18,20 @@
 .scrolldown span {
     /*描画位置*/
     position: absolute;
-    font-size: rem(10);
+    font-family: $montserrat;
+    font-size: 10px;
+    line-height: 1;
     letter-spacing: 0.1em;
-    left: 38px;
-    bottom: 57px;
+    left: 36px;
+    bottom: 75%;
+    text-transform: uppercase;
     @include mq(md) {
-        left: rem(16);
-        bottom: rem(10);
+        left: 20px;
+        bottom: 11%;
         /*縦書き設定*/
         -ms-writing-mode: tb-rl;
         -webkit-writing-mode: vertical-rl;
         writing-mode: vertical-rl;
-        
     }
 }
 
@@ -37,25 +39,27 @@
 .scrolldown span::before {
     content: "";
     /*描画位置*/
+    width: 5px;
+    height: 5px;
     position: absolute;
     bottom: 0;
-    left: rem(-43);
-    /*丸の形状*/
-    width: rem(10);
-    height: rem(10);
+    left: -36px;
     border-radius: 50%;
     background: $black;
     /*丸の動き1.6秒かけて透過し、永遠にループ*/
     animation: circlemove 1.6s ease-in-out infinite, cirlemovehide 1.6s ease-out infinite;
     @include mq(md) {
-        left: rem(-20);
+        left: -5px;
+        /*丸の形状*/
+        width: rem(10);
+        height: rem(10);
     }
 }
 
 /*下からの距離が変化して丸の全体が上から下に動く*/
 @keyframes circlemove {
     0% {
-        bottom: 10px;
+        bottom: 8px;
     }
     100% {
         bottom: -40px;
@@ -64,7 +68,7 @@
 @include mq(md) {
     @keyframes circlemove {
         0% {
-            bottom: 90px;
+            bottom: 80px;
         }
         100% {
             bottom: -5px;
@@ -76,20 +80,21 @@
 .scrolldown:before {
     content: "";
     position: absolute;
-    top: rem(-25);
-    left: rem(-21);
-    width: 45px;
-    height: 45px;
+    top: -18%;
+    left: -17px;
+    width: rem(44);
+    height: rem(44);
     /*マウスの形状*/
     border-radius: 50px;
     border: 1px solid $black;
     @include mq(md) {
-        left: rem(-23);
         /*描画位置*/
         width: rem(50);
         height: rem(50);
+        top: -20px;
+        left: -22px;
     }
-  }
+}
 
 /* 線の描写 */
 .scrolldown:after {
@@ -97,12 +102,12 @@
     /*描画位置*/
     position: absolute;
     bottom: 0;
-    left: 0;
-    /*線の形状*/
+    left: 2px;
     width: 1px;
-    height: 65px;
+    height: 53px;
     background: $black;
     @include mq(md) {
+        left: -2px;
         height: rem(94);
     }
 }
