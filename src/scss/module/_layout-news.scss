@@ -1,6 +1,10 @@
 @use 'global' as *;
 
 .layout-news {
+    margin-bottom: rem(158);
 
+    @include mq('md') {
+       margin-bottom: rem(294); 
+    }
 }
 

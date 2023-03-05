@@ -1,9 +1,14 @@
 @use 'global' as *;
 
 .layout-vision {
-    // あとで
-    margin-top: rem(800);
+    // あとでけす
+    margin-top: 2575px;
+    margin-bottom: rem(99);
 
-    margin-bottom: rem(300);
+    @include mq('md') {
+        // あとでけす
+       margin-top: 3458px; 
+       margin-bottom: rem(300);
+    }
 }
 

@@ -149,10 +149,7 @@
         </div>
       </div>
       <!-- messageコンテンツ終 -->
-
     </section>
-
-
 
     <!-- VISIONセクション -->
     <section class="vision layout-vision">
@@ -161,19 +158,21 @@
           <h2 class="vision__ttl">vision</h2>
           <p class="vision__text">
             30期を目指した新たな船出。<br>
-            組織の力を結集し次世代を担うリーダー達と挑み戦い続けることで、<br>
+            組織の力を結集し次世代を担うリーダー達と挑み戦い続けることで、<br class="br-md">
             VUCAと呼ばれる時代を切り拓く先導者となる。
           </p>
           <div class="vision__button-area">
             <a href="" class="vision__button-top button-top">
               <span class="button-top__arrow button-top__arrow--blue"></span>
-              <span class="button-top__arrow-text">view &emsp; more</span>
+              <span class="button-top__arrow-text">view &nbsp; more</span>
             </a>
           </div>
         </div>
       </div><!--vision__inner-->
       <div class="vision__bg-white"></div>
-      <div class="vision__bg-blue"></div>
+      <div class="vision__bg-blue">
+        <div class="vision__2035">2035<br>vision</div>
+      </div>
     </section>
 
     <!-- RECRUITセクション -->
@@ -188,7 +187,7 @@
           <div class="recruit__button-area">
             <a href="" class="recruit__button-top button-top">
               <span class="button-top__arrow button-top__arrow--green"></span>
-              <span class="button-top__arrow-text">view &emsp; more</span>
+              <span class="button-top__arrow-text">view &nbsp; more</span>
             </a>
           </div>
         </div>
@@ -205,12 +204,9 @@
             <div class="news__wrapper">
               <p class="news__index">
                 ライフ｜ホームページリニューアルを行いました。
-                ライフ｜ホームページリニューアルを行いました。
-                ライフ｜ホームページリニューアルを行いました。
-                ライフ｜ホームページリニューアルを行いました。
               </p>
-              <a href="" class="news__button-jump button-top-gray">
-                <span class="button-top-gray__arrow"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_uparrow_black.png" alt=""></span>
+              <a href="" class="news__button-jump button-top-gray u-mobile">
+                <span class="button-top-gray__arrow "><img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_uparrow_black.png" alt=""></span>
               </a>
             </div>
           </div>
@@ -220,12 +216,42 @@
             <div class="news__wrapper">
               <p class="news__index">
                 ライフ｜ホームページリニューアルを行いました。
-                <!-- ライフ｜ホームページリニューアルを行いました。
-                ライフ｜ホームページリニューアルを行いました。
-                ライフ｜ホームページリニューアルを行いました。 -->
               </p>
-              <a href="" class="news__button-jump button-top-gray">
-                <span class="button-top-gray__arrow"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_uparrow_black.png" alt=""></span>
+              <a href="" class="news__button-jump button-top-gray u-mobile">
+                <span class="button-top-gray__arrow u-mobile"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_uparrow_black.png" alt=""></span>
+              </a>
+            </div>
+          </div>
+          <!-- /.news__item -->
+          <div class="news__item">
+            <date class="news__date">2011.04.01</date>
+            <div class="news__wrapper">
+              <p class="news__index">
+              TSUBAKI不動産｜LINE公式アカウントが出来ました              </p>
+              <a href="" class="news__button-jump button-top-gray u-mobile">
+                <span class="button-top-gray__arrow u-mobile"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_uparrow_black.png" alt=""></span>
+              </a>
+            </div>
+          </div>
+          <!-- /.news__item -->
+          <div class="news__item">
+            <date class="news__date">2011.04.01</date>
+            <div class="news__wrapper">
+              <p class="news__index">
+              ライフ｜福山支店開設のお知らせ              </p>
+              <a href="" class="news__button-jump button-top-gray u-mobile">
+                <span class="button-top-gray__arrow u-mobile"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_uparrow_black.png" alt=""></span>
+              </a>
+            </div>
+          </div>
+          <!-- /.news__item -->
+          <div class="news__item">
+            <date class="news__date">2011.04.01</date>
+            <div class="news__wrapper">
+              <p class="news__index">
+              ライフプラス｜ホームページリニューアルを行いました              </p>
+              <a href="" class="news__button-jump button-top-gray u-mobile">
+                <span class="button-top-gray__arrow u-mobile"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_uparrow_black.png" alt=""></span>
               </a>
             </div>
           </div>
@@ -234,7 +260,7 @@
         <div class="news__button-area">
           <a href="" class="news__button-top button-top">
             <span class="button-top__arrow button-top__arrow--blue"></span>
-            <span class="button-top__arrow-text">view &emsp; more</span>
+            <span class="button-top__arrow-text">view &nbsp; more</span>
           </a>
         </div>
       </div>
@@ -263,9 +289,9 @@
           <div class="inquiry__wrapper-right">
             <h3 class="inquiry__ttl">お問い合わせ</h3>
             <p class="inquiry__text">
-              サービスに関するお問い合わせ
+              サービスに関するお問い合わせ<br>
               ならびに企業活動に関するお問い合わせはこちら</p>
-            <div class="inquiry__button-area">
+              <div class="inquiry__button-area">
               <a href="" class="inquiry__button-jump button-top-gray">
                 <span class="button-top-gray__arrow">
                   <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_uparrow_black.png" alt="">
