@@ -68,16 +68,14 @@ pc版のナビメニュー
     text-transform: uppercase;
 }
 
-.header__nav-item + .header__nav-item {
-    margin-right: rem(15);
-}
 
 .header__nav-item a {
     display: flex;
     height: inherit;
     align-items: center;
     position: relative;
-    padding-right: rem(15);
+    padding-left: 15px;
+    padding-right: 15px;
     letter-spacing: 0.05em;
     text-transform: uppercase;
 }

@@ -2,22 +2,22 @@
 <main>
 
   <!-- MV -->
-  <section class="mv layout-mv">
+  <section class="mv panel layout-mv">
     <div class="mv__inner">
-      <div class="swiper js-swiper">
+      <div class="swiper js-mv-swiper">
         <div class="swiper-wrapper">
           <picture class="swiper-slide">
-            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/sp-img_top_mv01.jpg">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/sp_img_top_mv01.jpg">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_mv01.jpg" media="(min-width: 769px)">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_mv01.jpg" alt="高度専門領域を繋ぎ全ての人のQOL向上と新たな価値を共創。">
           </picture>
           <picture class="swiper-slide">
-            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/sp-img_top_mv02.jpg">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/sp_img_top_mv02.jpg">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_mv02.jpg" media="(min-width: 769px)">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_mv02.jpg" alt="高度専門領域を繋ぎ全ての人のQOL向上と新たな価値を共創。">
           </picture>
           <picture class="swiper-slide">
-            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/sp-img_top_mv03.jpg">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/sp_img_top_mv03.jpg">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_mv03.jpg" media="(min-width: 769px)">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_mv03.jpg" alt="高度専門領域を繋ぎ全ての人のQOL向上と新たな価値を共創。">
           </picture>
@@ -56,14 +56,17 @@
         </p>
         <div class="co-creation__statement-ttl">statement</div>
         <div class="co-creation__statement-text">
-          我々は顧客をはじめとする様々なステークホルダーとの交流の場を構築し
-          対話の中から相互理解を深めることで期待を超えたイノベーションの種を見つけ育みます。
-          我々は個々の持つ多様な「経験」「価値観」を連携・共有し
-          より有用な知識を創造していく社会構築の中核を担うことでコア・コンピタンスの源泉とします。
+          我々は顧客をはじめとする様々なステークホルダーとの交流の場を構築し<br class="u-desktop">
+          対話の中から相互理解を深めることで期待を超えたイノベーションの種を見つけ育みます。<br>
+          我々は個々の持つ多様な「経験」「価値観」を連携・共有し<br>
+          より有用な知識を創造していく社会構築の中核を担うことでコア・コンピタンスの源泉とします。<br>
           そして、顧客の感じる価値の最大化を目指し、最適な答えを共に探す伴走者として在り続けます。</div>
       </div>
       <!-- /.co-creation__contents -->
     </div>
+    <p class="co-creation__vertical-text">
+    Value co-creation
+    </p><!-- /.co-creation__vertical-text -->
   </section>
 
   <div class="about-us__bg-circle">
@@ -79,9 +82,9 @@
           </p>
         </div>
       </div>
-        <div class="about-us__img-main-message">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/ttl_top_about_group_enterprise.png" alt="グループエンタープライズ">
-        </div>
+      <div class="about-us__img-main-message">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/ttl_top_about_group_enterprise.png" alt="グループエンタープライズ">
+      </div>
       <!-- serviceコンテンツ始-->
       <div class="about-us__service-inner">
         <div class="about-us__wrapper1">
@@ -92,12 +95,14 @@
             <div class="about-us__service-content">
               <div class="about-us__service-introduction">
                 <div class="about-us__service-ttl">株式会社TUBAKI不動産</div>
-                <p class="about-us__service-text1">不動産コンサルティング / 不動産売買仲介 / 新築建売分譲 / 空き家買取り・再生 / 空き家管理 / リースバック</p>
+                <p class="about-us__service-text1">不動産コンサルティング / 不動産売買仲介 / 新築建売分譲 /<br class="u-mobile">
+                  空き家買取り・再生 / 空き家管理 / リースバック</p>
                 <div class="about-us__service-ttl">行政書士法人ライフ</div>
-                <p class="about-us__service-text2">一般社団法人広島シルバーライフ協会・一般社団法人いきいきライフ協会</p>
-                <p class="about-us__service-text3">相続人確定 / 相続手続き / 遺言作成 / 家族信託 / 任意後見制度</p>
+                <p class="about-us__service-text2">一般社団法人広島シルバーライフ協会・一般社団法人いきいきライフ協会広島</p>
+                <p class="about-us__service-text3">相続手続き / 遺言作成支援 / 家族信託 / 成年後見制度支援 /<br class="u-mobile">
+                  身元保証 / エンディングサポート / 遺言執行</p>
                 <div class="about-us__service-ttl">株式会社ライフプラス</div>
-                <p class="about-us__service-text4">宅地建物取引 / 老人施設紹介</p>
+                <p class="about-us__service-text4">宅地建物取引 / 高齢者住宅サポート</p>
               </div>
             </div>
           </div><!-- /.about-us__about-us__service-contents -->
@@ -108,38 +113,55 @@
       <div class="about-us__service-inner">
         <h3 class="about-us__sub-ttl">message</h3>
         <div class="about-us__wrapper2">
+          <div class="about-us__sub-contents-wrap">
           <div class="about-us__sub-contents">
             <div class="about-us__item">
-              <div class="about-us__img-message"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_message01.jpg" alt="藤本律夫さんの顔写真">
+              <div class="about-us__img-message">
+                <picture>
+                  <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/sp_img_top_message01.jpg">
+                  <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_message01.jpg" media="(min-width: 769px)">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_message01.jpg" alt="藤本律夫さんの顔写真">
+                </picture>
               </div>
               <div class="about-us__footer">
                 <div class="about-us__each-message">より多くの方から必要とされるグループとして成長し続ける。</div>
                 <div class="about-us__name">藤本 律夫</div>
-                <div class="about-us__position">株式会社椿不動産 代表取締役</div>
+                <div class="about-us__position">株式会社TSUBAKI不動産 代表取締役</div>
               </div>
             </div>
             <!-- /.p-about-us__item -->
             <div class="about-us__item">
-              <div class="about-us__img-message"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_message02.jpg" alt="藤本律夫さんの顔写真">
+            <div class="about-us__img-message">
+                <picture>
+                  <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/sp_img_top_message02.jpg">
+                  <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_message02.jpg" media="(min-width: 769px)">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_message02.jpg" alt="永戸 康弘">
+                </picture>
               </div>
               <div class="about-us__footer">
-                <div class="about-us__each-message">最も身近で信頼される一生涯のパートナーを目指します。</div>
+                <div class="about-us__each-message">相続の専門家として寄り添うために。</div>
                 <div class="about-us__name">永戸 康弘</div>
                 <div class="about-us__position">行政書士法人ライフ 代表社員</div>
               </div>
             </div>
             <!-- /.p-about-us__item -->
             <div class="about-us__item">
-              <div class="about-us__img-message"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_message03.jpg" alt="藤本律夫さんの顔写真">
+            <div class="about-us__img-message">
+                <picture>
+                  <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/sp_img_top_message03.jpg">
+                  <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_message03.jpg" media="(min-width: 769px)">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_message03.jpg" alt="永戸 康弘の顔写真">
+                </picture>
               </div>
               <div class="about-us__footer">
-                <div class="about-us__each-message">全ての高齢者を自分らしい暮らしへと導く”道しるべ”になりたい。</div>
+                <div class="about-us__each-message">今と明日の楽しみを見つけながら、必要とされる会社をめざします。</div>
                 <div class="about-us__name">藤本 佐登子</div>
                 <div class="about-us__position">株式会社ライフプラス 代表取締役</div>
               </div>
             </div>
             <!-- /.p-about-us__item -->
           </div>
+          </div><!-- /.about-us__sub-contents-wrap -->
           <div class="about-us__button-area">
             <a href="" class="about-us__button-top button-top">
               <span class="button-top__arrow button-top__arrow--yellow"></span>

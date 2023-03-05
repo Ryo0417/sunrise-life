@@ -1,4 +1,5 @@
 <?php
+add_filter('show_admin_bar', '__return_false');
 function my_setup()
 {
   add_theme_support('post-thumbnails'); // アイキャッチ画像を有効化
@@ -38,6 +39,10 @@ function my_script_init()
 		'jquery',
 		'//code.jquery.com/jquery-3.6.1.min.js'
 	);
+  // 自作jsファイルの読み込み
+  wp_enqueue_script('gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js');
+  // 自作jsファイルの読み込み
+  wp_enqueue_script('ScrollTrigger', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js' );
   // 自作jsファイルの読み込み
   wp_enqueue_script('main', get_template_directory_uri() . '/assets/js/script.js', array(), '1.0.1', true);
   // 自作cssファイルの読み込み
