@@ -49,3 +49,4 @@ function my_script_init()
   wp_enqueue_style('style-name', get_template_directory_uri() . '/assets/css/styles.css', array(), '1.0.1', false);
 };
 add_action('wp_enqueue_scripts', 'my_script_init');
+
