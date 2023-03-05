@@ -8,9 +8,10 @@
     height: 64px;
     z-index: 100;
     @include mq(md) {
-        left: 8%;
-        bottom: 10%;
-        height: rem(94);
+        left: rem(88);
+        bottom: rem(89);
+        height: rem(120);
+        width: rem(50);
     }
 }
 
@@ -49,7 +50,8 @@
     /*丸の動き1.6秒かけて透過し、永遠にループ*/
     animation: circlemove 1.6s ease-in-out infinite, cirlemovehide 1.6s ease-out infinite;
     @include mq(md) {
-        left: rem(-5);
+        left: 50%;
+        transform: translateX(-50%);
         /*丸の形状*/
         width: rem(10);
         height: rem(10);
@@ -91,8 +93,8 @@
         /*描画位置*/
         width: rem(50);
         height: rem(50);
-        top: rem(-20);
-        left: rem(-22);
+        top: 0;
+        left: 0;
     }
 }
 
@@ -107,7 +109,7 @@
     height: 53px;
     background: $black;
     @include mq(md) {
-        left: -2px;
+        left: 50%;
         height: rem(94);
     }
 }
