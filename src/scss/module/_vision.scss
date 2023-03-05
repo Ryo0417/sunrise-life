@@ -18,8 +18,6 @@
     top: 41%;
     width: 92%;
     height: 47%;
-    // あとでけす
-    background-color: pink;
     @include mq('sm') {
         aspect-ratio: 345/ 300;
        width: 57%; 

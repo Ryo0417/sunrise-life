@@ -29,8 +29,6 @@
     transform: translateX(-50%);
     top: 61%;
     padding: rem(32);
-    // あとで
-    background-color: pink;
     @include mq('md') {
         width: rem(856);
         height: rem(426);
