@@ -144,9 +144,10 @@ sp版（1280px以下）のモーダル内メニュー
 }
 
 .header__sp-nav-items {
+    margin-top: 80px;
+    max-width: 189px;
     width: 100%;
-    display: inline-block;
-    
+    margin-inline: auto;
 }
 
 .header__sp-nav-item {
@@ -169,6 +170,8 @@ sp版（1280px以下）のモーダル内メニュー
 }
 
 .header__sp-nav-item-contact a {
+    max-width: rem(189);
+    width: 100%;
     position: relative;
     display: inline-block;
     background-color: $orange;
