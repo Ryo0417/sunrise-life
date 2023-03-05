@@ -27,7 +27,7 @@
     position: relative;
     margin-bottom: rem(8);
     @include mq('md') {
-        margin-bottom: rem(20);   
+        margin-bottom: rem(14);   
         width: rem(50);
         height: rem(50);
         left: rem(-5);
@@ -82,5 +82,11 @@
     padding-left: rem(9);
     @include mq('md') {
        padding-left: rem(21); 
+    }
+}
+
+.button-top__arrow-text {
+    @include mq('md') {
+       font-size: 16px; 
     }
 }

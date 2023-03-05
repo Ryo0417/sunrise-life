@@ -1,8 +1,6 @@
 @use 'global' as *;
 
 .layout-recruit {
-        // あとで
-        margin-top: 100px;
         margin-bottom: rem(332);
 
     @include mq('md') {

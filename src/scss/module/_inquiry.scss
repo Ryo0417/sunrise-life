@@ -30,13 +30,13 @@
     padding-left: $padding-sp;
     padding-right: $padding-sp;
     padding-top: rem(70);
-    padding-bottom: rem(96);
+    padding-bottom: rem(86);
     @include mq('md') {
        padding-left: rem(4);
        padding-right: 0;
-       padding-top: rem(130); 
-       padding-bottom: rem(130);
-       max-width: rem(1256);
+       padding-top: rem(124); 
+       padding-bottom: rem(164);
+       max-width: rem(1280);
        width: 100%;
     }
 }
@@ -66,6 +66,7 @@
     margin-bottom: rem(228);
     @include mq('md') {
        margin-bottom: 0; 
+       margin-right: rem(10);
        width: 32%;
     }
 }
@@ -75,16 +76,17 @@
 }
 
 .inquiry__wrapper-right {
-    @include mq('lg') {
+    @include mq('md') {
        width: 21%; 
-    } 
+    }
 }
 
 .inquiry__ttl {
     font-size: 20px;
     margin-bottom: rem(16);
-    @include mq('lg') {
+    @include mq('md') {
        font-size: rem(28); 
+       margin-bottom: rem(22);
     }
 }
 
@@ -94,7 +96,14 @@
     line-height: 2;
     @include mq('md') {
        font-size: rem(16);
-       margin-bottom: rem(22);
+       margin-bottom: rem(26);
+    }
+}
+
+.inquiry__wrapper-right > .inquiry__text {
+    margin-bottom: rem(28);
+    @include mq('md') {
+       margin-bottom: rem(26)
     }
 }
 
@@ -107,16 +116,13 @@
 .inquiry__button-text {
     padding-top: 20%;
     padding-left: 126%;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: $bold;
     text-transform: uppercase;
     position: relative;
     display: flex;
     align-items: center;
     @include mq('md') {
-       padding-left: 150%; 
-    }
-    @include mq('lg') {
-       padding-left: 140%; 
+       padding-left: 136%; 
     }
 }

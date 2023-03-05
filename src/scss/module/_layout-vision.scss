@@ -3,11 +3,11 @@
 .layout-vision {
     // あとでけす
     margin-top: 2575px;
-    margin-bottom: rem(100);
+    margin-bottom: rem(99);
 
     @include mq('md') {
         // あとでけす
-       margin-top: 3398px; 
+       margin-top: 3458px; 
        margin-bottom: rem(300);
     }
 }

@@ -61,6 +61,7 @@
     @include mq('md') {
        margin-bottom: rem(40);
        font-size: rem(16); 
+       letter-spacing: 0.05em;
     }
 }
 
@@ -68,6 +69,9 @@
 .recruit__button-area {
     display: flex;
     justify-content: center;
+    @include mq('md') {
+       margin-left: rem(10); 
+    }
 }
 
 .recruit__button-top {}

@@ -8,6 +8,9 @@
 .footer__inner {
     padding-left: rem(28);
     padding-right: $padding-sp;
+    @include mq('md') {
+       padding-left: rem(182); 
+    }
 }
 
 .footer__contents {
@@ -15,6 +18,7 @@
     margin-bottom: rem(53);
     @include mq('md') {
        display: flex; 
+       margin-bottom: rem(66);
     }
 }
 
@@ -87,6 +91,11 @@
     bottom: 23%;
     z-index: 2;
     font-family: $montserrat;
+    @include mq('md') {
+        right: rem(49);
+       bottom: 13%; 
+       font-size: 13px;
+    }
 }
 
 .footer__page-top span {
@@ -95,6 +104,9 @@
     width: rem(1);
     background-color: #000;
     margin-bottom: rem(10);
+    @include mq('md') {
+       height: rem(47); 
+    }
 }
 
 .footer__page-top a {
