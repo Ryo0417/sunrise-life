@@ -11,7 +11,10 @@
     background-repeat: no-repeat;
     width: 100%;
     height: rem(375);
-    @include mq('md') {
+    @include mq('sm') {
+        aspect-ratio: 1440/ 781;
+        width: 100%;
+        height: 50%;
         background-image: url(../img/top/bg_top_recruit.jpg);  
     }
 }
@@ -31,8 +34,8 @@
     @include mq('md') {
         width: rem(856);
         height: rem(426);
-        padding: rem(40);
-        top: 54%;
+        padding: rem(88);
+        top: 63%;
     }
 }
 
@@ -45,7 +48,7 @@
     letter-spacing: 0.11em;
     
     @include mq('md') {
-        margin-bottom: rem(40);
+        margin-bottom: rem(16);
         font-size: rem(45);  
     }
 }
@@ -56,7 +59,7 @@
     line-height: 2;
     margin-bottom: rem(30);
     @include mq('md') {
-        margin-bottom: rem(50);
+       margin-bottom: rem(40);
        font-size: rem(16); 
     }
 }

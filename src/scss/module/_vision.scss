@@ -20,14 +20,14 @@
     height: 47%;
     // あとでけす
     background-color: pink;
-    @include mq('md') {
-       padding: rem(60);
-       height: 63%; 
+    @include mq('sm') {
+        aspect-ratio: 345/ 300;
+       width: 57%; 
+       height: 61%; 
     }
-    @include mq('lg') {
-        padding: rem(130) rem(110);
-        height: 65%;
-        top: 30%;  
+    @include mq('md') {
+        padding: rem(112);
+        top: 28%;
     }
 }
 
@@ -37,21 +37,24 @@
     font-size: rem(26);
     color: $blue;
     margin-bottom: rem(12);
+    font-family: $montserrat;
     @include mq('md') {
-        margin-bottom: rem(40);
-        font-size: rem(45);
-        
+        margin-bottom: rem(32);
+        font-size: rem(48);
     }
 
 }
 
 .vision__text {
     font-weight: $bold;
-    margin-bottom: rem(-5);
-    font-size: 12px;
+    margin-bottom: rem(32);
+    font-size: 13px;
     line-height: 2;
-    @include mq('lg') {
+    letter-spacing: 0.05em;
+    @include mq('md') {
         font-size: rem(16);
+        line-height: 2.1;
+        margin-bottom: rem(48);
     }
 }
 
@@ -69,13 +72,15 @@
     width: 100%;
     height: rem(641);
     @include mq('md') {
+        width :73%;
+        height: rem(894);
         margin-left: auto;
         background-image :url(../img/top/bg_top_vision_img.jpg);
     }
 }
 
 .vision__bg-blue {
-    background-image :url(../img/top/sp_bg_top_vision_hand_img.jpg);
+    background-image :url(../img/top/sp_bg_top_vision_hand.jpg);
     background-position :center;
     background-size :cover;
     background-repeat :no-repeat;
@@ -84,7 +89,14 @@
     top: 12%;
     width: 92%;
     height: rem(224);
+    @include mq('sm') {
+        width: 66%;
+        aspect-ratio: 345/ 221;
+    }
     @include mq('md') {
+        width: 57%;
+        height: rem(510);
+        top: 11%;
         background-image :url(../img/top/bg_top_vision_hand.jpg);
 
     }

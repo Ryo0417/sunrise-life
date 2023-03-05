@@ -3,7 +3,10 @@
 .layout-recruit {
         // あとで
         margin-top: 100px;
+        margin-bottom: rem(332);
 
-    margin-bottom: rem(332);
+    @include mq('md') {
+       margin-bottom: rem(430); 
+    }
 }
 

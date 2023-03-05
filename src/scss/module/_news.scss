@@ -12,11 +12,11 @@
 
 .news__contents {
     margin-bottom: rem(40);
-    @include mq('lg') {
-       max-width: rem(1080);
+    @include mq('md') {
+       max-width: rem(1048);
        width: 100%;
        margin-inline: auto;
-       margin-bottom: rem(130);
+       margin-bottom: rem(68);
     }
 }
 
@@ -29,7 +29,7 @@
     
     @include mq('md') {
         font-size: rem(45);
-        margin-bottom: rem(74);  
+        margin-bottom: rem(64);  
     }
 }
 
@@ -47,6 +47,9 @@
 
 .news__item + .news__item {
 
+    @include mq('md') {
+        margin-top: rem(36);
+    }
 }
 
 .news__item:last-child {

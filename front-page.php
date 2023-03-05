@@ -158,13 +158,13 @@
           <h2 class="vision__ttl">vision</h2>
           <p class="vision__text">
             30期を目指した新たな船出。<br>
-            組織の力を結集し次世代を担うリーダー達と挑み戦い続けることで、<br>
+            組織の力を結集し次世代を担うリーダー達と挑み戦い続けることで、<br class="br-md">
             VUCAと呼ばれる時代を切り拓く先導者となる。
           </p>
           <div class="vision__button-area">
             <a href="" class="vision__button-top button-top">
               <span class="button-top__arrow button-top__arrow--blue"></span>
-              <span class="button-top__arrow-text">view &emsp; more</span>
+              <span class="button-top__arrow-text">view &nbsp; more</span>
             </a>
           </div>
         </div>
