@@ -2,13 +2,17 @@
 
 .about-us {
 
+    overflow: hidden;
+
 }
 
 .about-us__inner {
-    max-width: rem(1080);
+    max-width: rem(315);
     width: 100%;
     margin-inline: auto;
-    padding: 0 rem(20);
+    @include mq(md) {
+        max-width: rem(1080);
+    }
 }
 
 .about-us__contents {
@@ -22,7 +26,7 @@
     font-family: $montserrat;
     line-height: 1;
     letter-spacing: 0.1em;
-    margin-bottom: 30px;
+    margin-bottom: rem(30);
     @include mq(md) {
         font-size: rem(80);
         margin-bottom: rem(50);
@@ -34,7 +38,7 @@
     font-weight: $bold;
     letter-spacing: 0.1em;
     line-height: 1.76;
-    margin-bottom: 16px;
+    margin-bottom: rem(16);
     @include mq(md) {
         font-size: rem(28);
         line-height: 1.428;
@@ -47,7 +51,7 @@
     font-weight: $bold;
     letter-spacing: 0.1em;
     line-height: 2;
-    margin-bottom: 20px;
+    margin-bottom: rem(20);
     @include mq(md) {
         font-size: rem(16);
         line-height: 2.5;
@@ -56,12 +60,10 @@
 }
 
 .about-us__img-main-message {
-    width: 375px;
-    height: 70px;
+    height: 80px;
     margin-left: -29px;
     margin-bottom: -20px;
     white-space: nowrap;
-    overflow-x:hidden;
     @include mq(md) {
         width: 1055px;
         margin-left: 0px;
@@ -70,30 +72,35 @@
 }
 
 .about-us__img-main-message img {
-    width: 1069px;
-    max-width: inherit;
+    width: 1556px;
+    max-width: fit-content;
     margin-bottom: -60px;
     @include mq(md) {
     }
 }
 
-
 /*======================================
 serviceコンテンツ                                        
 ======================================*/
 .about-us__wrapper1 {
-    margin-bottom: 15px;
+    margin-bottom: rem(15);
     @include mq(md) {
         display: flex;
+        flex-direction: row-reverse;
         margin-bottom: rem(30);
     }
 }
 
 .about-us__service-inner {
-    max-width: rem(1080);
+    max-width: rem(630);
     width: 100%;
     margin-inline: auto;
-    padding: 0 rem(20);
+    padding: 0 rem(30);
+    @include mq(md) {
+        max-width: rem(1080);
+        padding: 0 rem(20);
+        margin-bottom: rem(236);
+    }
 }
 
 .about-us__sub-ttl,
@@ -106,9 +113,11 @@ serviceコンテンツ
 }
 
 .about-us__sub-ttl {
-    margin-bottom: 25px;
+    margin-bottom: rem(30);
     color: $yellow;
-    font-size: 18px;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    line-height: 1.25;
     font-weight: $semibold;
     text-transform: uppercase;
     font-family: $montserrat;
@@ -130,10 +139,10 @@ serviceコンテンツ
 }
 
 .about-us__service-ttl {
-    font-size: rem(18);
+    font-size: 16px;
     font-weight: $bold;
     letter-spacing: 0.1em;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     @include mq(md) {
         font-size: rem(18);
         margin-bottom: rem(50);
@@ -143,29 +152,44 @@ serviceコンテンツ
 .about-us__service-text1,
 .about-us__service-text3,
 .about-us__service-text4 {
-    font-size: rem(14);
+    font-size: 12px;
     letter-spacing: 0.1em;
-    margin-bottom: rem(20);
+    line-height: 2;
+    margin-bottom: rem(32);
+    @include mq(md) {
+        font-size: rem(14);
+    }
 }
 
 .about-us__service-text2 {
-    font-size: rem(11);
+    font-size: 11px;
     font-weight: $bold;
     letter-spacing: 0.1em;
+    margin-bottom: rem(15);
+    @include mq(md) {
+        font-size: rem(11);
+    }
+}
+
+.about-us__service-text3 {
+    margin-bottom: rem(35);
 }
 
 .about-us__service-text4 {
-    margin-bottom: rem(70);
+    margin-bottom: rem(65);
     @include mq(md) {
         margin-bottom: rem(-95);
     }
 }
 
 .about-us__img-triangle {
-    max-width: rem(300);
+    max-width: rem(315);
     width: 100%;
+    margin-inline: auto;
+    margin-bottom: rem(44);
     @include mq(lg) {
         max-width: rem(552);
+        margin-bottom: 0px;
     }
 }
 
@@ -176,6 +200,8 @@ serviceコンテンツ
     position: relative;
     top: 0;
     left: 0;
+    max-width: rem(1909);
+    width: 100%;
     background-image: url("../img/top/bg_top_circle.png");
     background-size: cover;
     background-position: center;
@@ -189,25 +215,54 @@ serviceコンテンツ
 messageコンテンツ                                        
 ======================================*/
 .about-us__wrapper2 {
-    max-width: rem(1080);
+    max-width: rem(840);
     width: 100%;
-    margin-bottom: rem(50);
-    margin-inline: auto;
+    overflow: hidden;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    @include mq(md) {
+        max-width: rem(1080);
+        width: 100%;
+        margin-bottom: rem(50);
+        margin-inline: auto;
+    }
 }
 
+.about-us__sub-contents-wrap {
+    width: 840px;
+    overflow: scroll;
+    margin: auto;
+    overflow-x: auto;
+    white-space: nowrap;
+    @include mq(md) {
+        max-width: rem(1080);
+        width: 100%;
+    }
+}
+
+
 .about-us__sub-contents {
-    @include mq(lg) {
-        display: flex;
+    display: inline-block;
+    overflow-x: scroll;
+    width: 100%;
+    display: flex;
+    @include mq(md) {
         flex-wrap: wrap;
     }
 }
 
 .about-us__item {
+    max-width: rem(252);
     width: 100%;
+    margin-right: rem(20);
     @include mq(lg) {
-        width: 30%;
-        margin-right: 3%;
+        max-width: rem(320);
+        margin-right: 3.5%;
     }
+}
+
+.about-us__item:last-child  {
+    margin-right: 0;
 }
 
 .about-us__img-message {
@@ -217,15 +272,20 @@ messageコンテンツ
 
 .about-us__img-message img {
     object-fit: cover;
-    margin-bottom: rem(20);
+    margin-bottom: rem(16);
+    @include mq(md) {
+        margin-bottom: rem(20);
+    }
 }
 
 .about-us__each-message {
-    font-size: 16px;
+    font-family: $notoserif;
+    font-size: 15px;
     font-weight: $bold;
     letter-spacing: 0.05em;
     color: #000;
-    margin-bottom: rem(22);
+    margin-bottom: rem(18);
+    white-space: pre-wrap;
     @include mq(lg) {
         font-size: rem(18);
     }
@@ -255,5 +315,40 @@ messageコンテンツ
 ボタン                                        
 ======================================*/
 .about-us__item {
-    margin-bottom: rem(58);
+    margin-bottom: rem(26);
+    @include mq(md) {
+        margin-bottom: rem(58);
+    }
+}
+
+.about-us__button-top > .button-top__arrow-text {
+    padding-left: rem(12);
+    letter-spacing: 0.2em;
+}
+
+.about-us__button-top {
+    font-family: $montserrat;
+    font-size: 14px;
+    font-weight: $semibold;
+    letter-spacing: 0.2em;
+}
+
+.about-us__button-top > .button-top__arrow {
+    width: rem(40);
+    height: rem(40);
+    margin-bottom: rem(20);
+}
+
+.about-us__button-top > .button-top__arrow::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 35%;
+    width: rem(12);
+    height: rem(2);
+}
+
+.about-us__button-top > .button-top__arrow::before {
+    width: rem(10);
+    height: rem(10);
 }

@@ -6,7 +6,7 @@ const rename = require("gulp-rename");
 
 // 読み込み先（階層が間違えていると動かないので注意）
   const srcPath = {
-      css: ['src/scss/**/*.scss', '!./_src/sass/**/_*.scss'],
+      css: ['src/scss/**/*.scss', '!./_src/scss/**/_*.scss'],
       img: 'src/img/**/*',
       js: 'src/js/**/*',
       html: './**/*.html'
@@ -15,7 +15,7 @@ const rename = require("gulp-rename");
 // 吐き出し先（なければ生成される）
   const destPath = {
       root: 'assets/',
-      css: 'assets/css/',
+      css: './assets/css/',
       img: 'assets/img/',
       js: 'assets/js/'
   }
@@ -61,7 +61,7 @@ const cssSass = () => {
             }))
         .pipe(sassGlob())
         .pipe(sass.sync({
-            includePaths: ['src/sass'],
+            includePaths: ['src/scss'],
             outputStyle: 'expanded'
         }))
         .pipe(postcss([cssnext(browsers)]))
