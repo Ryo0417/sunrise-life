@@ -111,7 +111,7 @@ pc版のナビメニュー
     right: 20%;
     width: 7px;
     height: 7px;
-    background-image: url("/assets/img/top/img_top_uparrow.png");
+    background-image: url("../img/top/img_top_uparrow.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -145,11 +145,8 @@ sp版（1280px以下）のモーダル内メニュー
 
 .header__sp-nav-items {
     width: 100%;
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: inline-block;
+    
 }
 
 .header__sp-nav-item {
