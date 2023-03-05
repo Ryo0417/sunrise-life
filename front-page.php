@@ -149,10 +149,7 @@
         </div>
       </div>
       <!-- messageコンテンツ終 -->
-
     </section>
-
-
 
     <!-- VISIONセクション -->
     <section class="vision layout-vision">
@@ -205,12 +202,9 @@
             <div class="news__wrapper">
               <p class="news__index">
                 ライフ｜ホームページリニューアルを行いました。
-                ライフ｜ホームページリニューアルを行いました。
-                ライフ｜ホームページリニューアルを行いました。
-                ライフ｜ホームページリニューアルを行いました。
               </p>
-              <a href="" class="news__button-jump button-top-gray">
-                <span class="button-top-gray__arrow"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_uparrow_black.png" alt=""></span>
+              <a href="" class="news__button-jump button-top-gray u-mobile">
+                <span class="button-top-gray__arrow "><img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_uparrow_black.png" alt=""></span>
               </a>
             </div>
           </div>
@@ -220,12 +214,42 @@
             <div class="news__wrapper">
               <p class="news__index">
                 ライフ｜ホームページリニューアルを行いました。
-                <!-- ライフ｜ホームページリニューアルを行いました。
-                ライフ｜ホームページリニューアルを行いました。
-                ライフ｜ホームページリニューアルを行いました。 -->
               </p>
-              <a href="" class="news__button-jump button-top-gray">
-                <span class="button-top-gray__arrow"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_uparrow_black.png" alt=""></span>
+              <a href="" class="news__button-jump button-top-gray u-mobile">
+                <span class="button-top-gray__arrow u-mobile"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_uparrow_black.png" alt=""></span>
+              </a>
+            </div>
+          </div>
+          <!-- /.news__item -->
+          <div class="news__item">
+            <date class="news__date">2011.04.01</date>
+            <div class="news__wrapper">
+              <p class="news__index">
+              TSUBAKI不動産｜LINE公式アカウントが出来ました              </p>
+              <a href="" class="news__button-jump button-top-gray u-mobile">
+                <span class="button-top-gray__arrow u-mobile"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_uparrow_black.png" alt=""></span>
+              </a>
+            </div>
+          </div>
+          <!-- /.news__item -->
+          <div class="news__item">
+            <date class="news__date">2011.04.01</date>
+            <div class="news__wrapper">
+              <p class="news__index">
+              ライフ｜福山支店開設のお知らせ              </p>
+              <a href="" class="news__button-jump button-top-gray u-mobile">
+                <span class="button-top-gray__arrow u-mobile"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_uparrow_black.png" alt=""></span>
+              </a>
+            </div>
+          </div>
+          <!-- /.news__item -->
+          <div class="news__item">
+            <date class="news__date">2011.04.01</date>
+            <div class="news__wrapper">
+              <p class="news__index">
+              ライフプラス｜ホームページリニューアルを行いました              </p>
+              <a href="" class="news__button-jump button-top-gray u-mobile">
+                <span class="button-top-gray__arrow u-mobile"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_uparrow_black.png" alt=""></span>
               </a>
             </div>
           </div>

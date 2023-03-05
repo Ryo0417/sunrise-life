@@ -3,7 +3,7 @@
       <div class="footer__contents">
         <div class="footer__logo">
           <a href="">
-            <img src="./assets/img/top/logo.png" alt="ライフグループのフッターロゴ">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/logo.png" alt="ライフグループのフッターロゴ">
           </a>
         </div>
         <div class="footer__lists">
@@ -20,7 +20,7 @@
     </div><!--footer__inner-->
 
   </footer>
-  
+
   <?php wp_footer(); ?>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>

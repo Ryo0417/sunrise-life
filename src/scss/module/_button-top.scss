@@ -22,10 +22,13 @@
 .button-top__arrow{
     display: inline-block;
     border-radius: 50%;
-    width: rem(50);
-    height: rem(50);
+    width: rem(42);
+    height: rem(42);
     position: relative;
-    margin-bottom: rem(20);
+    margin-bottom: rem(8);
+    @include mq('md') {
+        margin-bottom: rem(20);   
+    }
 }
 
 .about-us__button-top > .button-top__arrow,
@@ -73,5 +76,5 @@
 
 .about-us__button-top > .button-top__arrow-text,
 .vision__button-top > .button-top__arrow-text {
-    padding-left: rem(20);
+    padding-left: rem(9);
 }

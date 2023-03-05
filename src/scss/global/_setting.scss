@@ -80,6 +80,13 @@ $mediaquerys: (
   @return math.div($pixels, 16) * 1rem;
 }
 
+.u-mobile {
+  display: none;
+  @include mq('md') {
+    display: block;
+  }
+}
+
 body {
   font-family: $base-font-family;
   color: $font-black;

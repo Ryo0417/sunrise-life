@@ -1,12 +1,12 @@
 @use 'global' as *;
 
 .news {
-    margin-bottom: rem(300);
+    // あとで
     background-color: lightblue;
 }
 
 .news__inner {
-    padding-left: $padding-sp;
+    padding-left: $padding-sp + 10px;
     padding-right: $padding-sp;
 }
 
@@ -22,17 +22,22 @@
 
 .news__ttl {
     color: $blue;
-    font-size: rem(45);
-    margin-bottom: rem(74);
     text-transform: uppercase;
     text-align: center;
+    font-size: rem(26);
+    letter-spacing: 0.11em;
+    
+    @include mq('md') {
+        font-size: rem(45);
+        margin-bottom: rem(74);  
+    }
 }
 
 .news__item {
     border-bottom: 1px solid #ededed;
-    margin-top: rem(34);
-    padding-bottom: rem(34);  
     position: relative; 
+    margin-top: rem(20);
+    padding-bottom: rem(20);  
 
     @include mq('lg') {
        display: flex; 
@@ -50,6 +55,9 @@
 
 .news__date {
     font-size: 14px;
+    margin-bottom: rem(10);
+    display: inline-block;
+
     @include mq('lg') {
         margin-right: rem(30);
         font-size: rem(14);
@@ -66,9 +74,10 @@
 .news__index {  
     font-weight: $bold;
     display: inline-block;
-    width: 70%;
-    font-size: 14px;
+    width: 94%;
+    font-size: 13px;
     line-height: 1;
+    letter-spacing: 0.01em;
 
     @include mq('md') {
        width: 70%; 

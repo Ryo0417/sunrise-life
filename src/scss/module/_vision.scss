@@ -14,10 +14,10 @@
     position: absolute;
     right: 0;
     z-index: 1;
-    padding: rem(40);
-    top: 40%;
-    width: 60%;
-    height: 80%;
+    padding: rem(32) rem(40);
+    top: 41%;
+    width: 92%;
+    height: 47%;
     // あとでけす
     background-color: pink;
     @include mq('md') {
@@ -32,19 +32,24 @@
 }
 
 .vision__ttl {
-    margin-bottom: rem(40);
-    color: $blue;
-    font-size: rem(45);
     text-transform: uppercase;
     text-align: left;
+    font-size: rem(26);
+    color: $blue;
+    margin-bottom: rem(12);
+    @include mq('md') {
+        margin-bottom: rem(40);
+        font-size: rem(45);
+        
+    }
 
 }
 
 .vision__text {
     font-weight: $bold;
-    margin-bottom: rem(38);
-    font-size: 14px;
-    line-height: 2.8;
+    margin-bottom: rem(-5);
+    font-size: 12px;
+    line-height: 2;
     @include mq('lg') {
         font-size: rem(16);
     }
@@ -57,31 +62,30 @@
 }
 
 .vision__bg-white {
-    background-image :url(../img/top/bg_top_vision_img.jpg);
+    background-image :url(../img/top/sp_bg_top_vision_img.jpg);
     background-position :center;
     background-size :cover;
     background-repeat :no-repeat;
-    aspect-ratio:1051/895;
-    margin-left: auto;
-    width: rem(500);
-    width: 75%;
-    @include mq('lg') {
-
+    width: 100%;
+    height: rem(641);
+    @include mq('md') {
+        margin-left: auto;
+        background-image :url(../img/top/bg_top_vision_img.jpg);
     }
 }
 
 .vision__bg-blue {
-    background-image :url(../img/top/bg_top_vision_hand.jpg);
+    background-image :url(../img/top/sp_bg_top_vision_hand_img.jpg);
     background-position :center;
     background-size :cover;
     background-repeat :no-repeat;
-    aspect-ratio: 818/508;
     position: absolute;
     left: 0;
-    width: rem(400);
-    top: 15%;
-    width: 60%;
-    @include mq('lg') {
+    top: 12%;
+    width: 92%;
+    height: rem(224);
+    @include mq('md') {
+        background-image :url(../img/top/bg_top_vision_hand.jpg);
 
     }
 }

@@ -1,20 +1,27 @@
 @use 'global' as *;
 
 .inquiry {
-    background-image :url(../img/top/bg_top_inquiry.png);
+    background-image :url(../img/top/sp_bg_top_inquiry.jpg);
     background-position :center;
     background-size :cover;
     background-repeat :no-repeat;
     position: relative;
+    @include mq('md') {
+        background-image :url(../img/top/bg_top_inquiry.png);
+    }
 }
 
 .inquiry::before {
-    @include mq('lg') {
-        position: absolute;
-        content: ""; 
+    position: absolute;
+    content: ""; 
+    background-color: $white;
+    width: 100%;
+    top: 52%;
+    height: rem(1);
+
+    @include mq('md') {
         width: rem(1);
         height: 100%;
-        background-color: $white;
         left: 53%;
      } 
 }
@@ -22,8 +29,8 @@
 .inquiry__inner {
     padding-left: $padding-sp;
     padding-right: $padding-sp;
-    padding-top: rem(40);
-    padding-bottom: rem(40);
+    padding-top: rem(70);
+    padding-bottom: rem(96);
     @include mq('lg') {
        padding-left: 0;
        padding-right: 0;
@@ -33,7 +40,7 @@
 }
 
 .inquiry__contents {
-    width: 60%;
+    width: 83%;
     margin: 0 auto;
     margin-bottom: rem(40);
     @include mq('lg') {
@@ -54,7 +61,7 @@
 }
 
 .inquiry__wrapper-left {
-    margin-bottom: rem(80);
+    margin-bottom: rem(228);
     @include mq('lg') {
        margin-bottom: 0; 
        width: 29%;
@@ -72,16 +79,16 @@
 }
 
 .inquiry__ttl {
-    font-size: 24px;
-    margin-bottom: rem(40);
+    font-size: 20px;
+    margin-bottom: rem(16);
     @include mq('lg') {
        font-size: rem(28); 
     }
 }
 
 .inquiry__text {
-    font-size: 16px;
-    margin-bottom: rem(40);
+    font-size: 12px;
+    margin-bottom: rem(56);
     line-height: 2;
     @include mq('lg') {
        font-size: rem(16);
@@ -95,7 +102,8 @@
 
 
 .inquiry__button-text {
-    padding-left: 135%;
+    padding-top: 20%;
+    padding-left: 126%;
     font-size: 18px;
     font-weight: $bold;
     text-transform: uppercase;
