@@ -61,24 +61,57 @@
 }
 
 .about-us__img-main-message {
-    height: 80px;
+    height: 122px;
     margin-left: -29px;
     margin-bottom: -20px;
-    white-space: nowrap;
+    display: flex;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
     @include mq(md) {
-        max-width: rem(1440);
+        height: 177px;
+        // max-width: rem(1440);
         margin-left: auto;
         margin-right: auto;
     }
 }
 
 .about-us__img-main-message img {
-    width: 1556px;
+    width: auto;
+    height: 100%;
     max-width: fit-content;
     margin-bottom: -60px;
     @include mq(md) {
     }
 }
+
+@keyframes loop {
+    0% {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes loop2 {
+    0% {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-200%);
+    }
+  }
+
+  .about-us__img-main-message img:first-child {
+    animation: loop 30s -15s linear infinite;
+  }
+  
+  .about-us__img-main-message img:last-child {
+    animation: loop2 30s linear infinite;
+    margin-left: 100px;
+  }
 
 /*======================================
 serviceコンテンツ                                        
@@ -238,6 +271,7 @@ messageコンテンツ
     @include mq(md) {
         max-width: rem(1080);
         width: 100%;
+        white-space: initial;
     }
 }
 
@@ -249,6 +283,7 @@ messageコンテンツ
     display: flex;
     @include mq(md) {
         flex-wrap: wrap;
+        justify-content: space-around;
     }
 }
 
@@ -338,6 +373,7 @@ messageコンテンツ
     width: rem(40);
     height: rem(40);
     margin-bottom: rem(20);
+    margin-left: rem(10);
 }
 
 .about-us__button-top > .button-top__arrow::after {

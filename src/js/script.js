@@ -13,6 +13,17 @@ const mySwiper = new Swiper('.swiper', {
     },
 });
 
+//無限スライダー
+// const infinite = new Swiper(".infinite", {
+//     loop: true, // ループ有効
+//     slidesPerView: 'auto', // 一度に表示する枚数
+//     speed: 5000, // ループの時間
+//     allowTouchMove: false, // スワイプ無効
+//     autoplay: {
+//       delay: 0, // 途切れなくループ
+//     },
+//   });
+
 //ドロワーメニュー
 $("#js-hamburger").click(function () {
     // $(".l-drawer-menu").toggleClass("is-show");
@@ -31,11 +42,15 @@ gsap.utils.toArray(".panel").forEach((panel, i) => {
     ScrollTrigger.create({
         trigger: panel,
         start: "top top",
-        end: "top .co-creation__ttl",
+        // end: "top .co-creation__ttl",
         pin: true,
         pinSpacing: false,
     });
 });
+
+ScrollTrigger.create({
+    snap: 0// snap whole page to the closest section!
+  });
 
 // スクロールのドラッグ有効化
 jQuery.prototype.mousedragscrollable = function () {
