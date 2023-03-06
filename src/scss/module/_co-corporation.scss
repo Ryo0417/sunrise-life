@@ -1,7 +1,6 @@
 @use "global" as *;
 
 .co-creation {
-
     background-image: url(../img/top/sp_bg_top_co_creation.jpg);
 
     background-position: center;
@@ -26,7 +25,7 @@
     background-color: rgba(255, 255, 255, 0.7);
     padding: rem(50) rem(40);
     @include mq(md) {
-        padding: rem(117) 12.5vw;
+        padding: rem(117) 0 rem(110.6) 10.5vw;
         position: relative;
     }
 }
@@ -64,8 +63,9 @@
     margin-bottom: rem(20);
     @include mq(lg) {
         font-size: rem(20);
-        margin-bottom: rem(11);
-        line-height: 2.1875;
+        margin-bottom: rem(11.8);
+        letter-spacing: 0.05em;
+        line-height: 1.2;
     }
 }
 
@@ -77,7 +77,7 @@
     @include mq(lg) {
         font-size: rem(16);
         font-weight: $semibold;
-        line-height: 2.5;
+        line-height: 2.2;
         letter-spacing: 0.01em;
     }
 }

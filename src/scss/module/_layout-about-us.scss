@@ -2,5 +2,9 @@
 
 .layout-about-us {
     padding-top: rem(100);
-
+    margin-bottom: rem(100);
+    @include mq(md) {
+        padding-top: rem(300);
+        margin-bottom: rem(18);
+    }
 }
