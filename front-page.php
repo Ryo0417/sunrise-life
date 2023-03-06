@@ -86,7 +86,9 @@
       </div>
       <div class="about-us__img-main-message">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/ttl_top_about_group_enterprise.png" alt="グループエンタープライズ">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/ttl_top_about_group_enterprise.png" alt="グループエンタープライズ">
       </div>
+
       <!-- serviceコンテンツ始-->
       <div class="about-us__service-inner">
         <div class="about-us__wrapper1">
@@ -167,7 +169,7 @@
           <div class="about-us__button-area">
             <a href="" class="about-us__button-top button-top">
               <span class="button-top__arrow button-top__arrow--yellow"></span>
-              <span class="button-top__arrow-text">view &emsp; more</span>
+              <span class="button-top__arrow-text">view more</span>
             </a>
           </div>
         </div>
