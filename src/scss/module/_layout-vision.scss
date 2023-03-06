@@ -5,7 +5,6 @@
     margin-bottom: rem(99);
 
     @include mq('md') {
-       margin-top: rem(322); 
        margin-bottom: rem(300);
     }
 }
