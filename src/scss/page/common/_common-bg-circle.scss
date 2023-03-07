@@ -1,0 +1,17 @@
+@use "global" as *;
+.common-bg-circle {
+  position: relative;
+  top: 0;
+  left: 0;
+  background-image: url(../img/common/common-bg-sp.png);
+  background-size: 557px;
+  background-position: center 60px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  z-index: -1;
+  @include mq("md") {
+    background-image: url(../img/common/common-bg-pc.png);
+    background-size: 1909px;
+  }
+}

@@ -1,0 +1,32 @@
+@use "global" as *;
+.sub-member {
+  overflow: hidden;
+}
+
+.sub-member__img {
+  background: url(../img/message/our-member-bg.jpg) no-repeat center center / cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: table;
+  width: 100vw;
+  height: 220px;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.sub-member__img img {
+
+}
+
+.sub-member__img p:first-child {
+  animation: loop 30s -15s linear infinite;
+  padding-left: rem(25);
+  padding-right: rem(25);
+}
+
+.sub-member__img p:not(:first-child) {
+  animation: loop2 30s linear infinite;
+  padding-left: rem(25);
+  padding-right: rem(25);
+}
