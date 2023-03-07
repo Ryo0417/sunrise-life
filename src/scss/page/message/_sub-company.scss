@@ -9,6 +9,11 @@
   padding-bottom: rem(17);
   border-bottom: 1px solid #EDEDED;
   position: relative;
+  @include mq("md") {
+    font-size: rem(28);
+    padding-bottom: rem(40);
+    margin-left: 0;
+  }
 }
 
 .sub-company__name::after {
@@ -19,6 +24,9 @@
   width: rem(57);
   height: inherit;
   border-bottom: 1px solid $yellow;
+  @include mq("md") {
+    width: rem(196);
+  }
 }
 
 .sub-company__link {
@@ -26,12 +34,18 @@
   align-items: center;
   padding-left: rem(30);
   margin-bottom: rem(94);
+  @include mq("md") {
+    padding-left: 0;
+  }
 }
 
 .sub-company__link img {
   width: rem(40);
   height: rem(40);
-  margin-right: rem(12);
+  @include mq("md") {
+    width: rem(50);
+    height: rem(50);
+  }
 }
 
 .sub-company__link a {
@@ -40,12 +54,24 @@
   font-weight: $semibold;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  margin-left: rem(12);
+}
+
+.sub-company__content {
+  @include mq("md") {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
 }
 
 .sub-company__img {
   width: calc(282 / 375) * 100%;
   margin-left: auto;
   position: relative;
+  @include mq("md") {
+    width: 100%;
+  }
 }
 
 .sub-company__name-img {
@@ -55,17 +81,29 @@
   left: -17%;
   width: calc(236 / 375) * 100%;
   height: rem(68);
+  @include mq("md") {
+    position: static;
+    width: rem(612);
+    height: initial;
+  }
 }
 
 .sub-company__ceo {
   padding-left: rem(30);
   margin-top: rem(50);
+  @include mq("md") {
+    padding-left: 0;
+    margin-top: rem(57);
+  }
 }
 
 .sub-company__ceo p {
   font-size: rem(20);
   font-weight: $bold;
   letter-spacing: 0.1em;
+  @include mq("md") {
+    font-size: rem(24);
+  }
 }
 
 .sub-company__ceo span {
@@ -75,15 +113,38 @@
   line-height: 1.63;
   letter-spacing: 0.1em;
   margin-top: rem(10);
+  @include mq("md") {
+    font-size: rem(13);
+    margin-top: rem(18);
+  }
+}
+
+.sub-company__body {
+  @include mq("md") {
+    margin-right: rem(-170);
+    position: relative;
+    z-index: 1;
+  }
 }
 
 .sub-company__desc {
   font-size: rem(14);
   font-weight: $regular;
-  line-height: 27px;
+  line-height: calc(27 / 14);
   letter-spacing: 0.1em;
   padding: rem(40);
   margin-top: rem(30);
   text-align: justify;
   font-feature-settings: 'palt' on;
+  @include mq("md") {
+    max-width: rem(1149);
+    width: 100%;
+    font-size: rem(16);
+    line-height: calc(40 / 16);
+    padding: rem(130) rem(180);
+    margin-left: rem(-180);
+    background: rgba(255, 255, 255, 0.9);
+    margin-top: rem(-80);
+    position: relative;
+  }
 }
