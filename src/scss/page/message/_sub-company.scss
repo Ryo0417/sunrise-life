@@ -5,6 +5,7 @@
   letter-spacing: 0.1em;
   margin-right: rem(30);
   margin-bottom: rem(25);
+  margin-left: rem(30);
   padding-bottom: rem(17);
   border-bottom: 1px solid #EDEDED;
   position: relative;
@@ -23,6 +24,7 @@
 .sub-company__link {
   display: flex;
   align-items: center;
+  padding-left: rem(30);
   margin-bottom: rem(94);
 }
 
@@ -49,12 +51,39 @@
 .sub-company__name-img {
   content: "";
   position: absolute;
-  top: rem(-47);
-  left: rem(-60);
+  top: -13%;
+  left: -17%;
   width: calc(236 / 375) * 100%;
   height: rem(68);
 }
 
 .sub-company__ceo {
-  
+  padding-left: rem(30);
+  margin-top: rem(50);
+}
+
+.sub-company__ceo p {
+  font-size: rem(20);
+  font-weight: $bold;
+  letter-spacing: 0.1em;
+}
+
+.sub-company__ceo span {
+  display: block;
+  font-size: rem(12);
+  font-weight: $regular;
+  line-height: 1.63;
+  letter-spacing: 0.1em;
+  margin-top: rem(10);
+}
+
+.sub-company__desc {
+  font-size: rem(14);
+  font-weight: $regular;
+  line-height: 27px;
+  letter-spacing: 0.1em;
+  padding: rem(40);
+  margin-top: rem(30);
+  text-align: justify;
+  font-feature-settings: 'palt' on;
 }
