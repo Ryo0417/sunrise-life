@@ -1,15 +1,17 @@
 @use "global" as *;
 
 .co-creation {
-    background-image: url(../img/top/bg_top_co_creation.jpg);
+
+    background-image: url(../img/top/sp_bg_top_co_creation.jpg);
+
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: rem(20) rem(30);
+    padding: rem(27) rem(30);
     position: relative;
-    z-index: 1;
-    height: auto;
+    z-index: 3;
     @include mq(md) {
+        background-image: url(../img/top/bg_top_co_creation.jpg);
         padding: rem(110) rem(180);
     }
 }
@@ -19,19 +21,20 @@
 
 .co-creation__contents {
     max-width: rem(1080);
+    margin: 0 auto;
     height: auto;
     background-color: rgba(255, 255, 255, 0.7);
     padding: rem(50) rem(40);
-    @include mq(lg) {
-        padding: rem(117) rem(116);
-        height: rem(694);
+    @include mq(md) {
+        padding: rem(117) 12.5vw;
+        position: relative;
     }
 }
 
 .co-creation__ttl {
-    max-width: 190px;
+    max-width: rem(190);
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: rem(24);
     @include mq(lg) {
         max-width: rem(352);
         margin-bottom: rem(28);
@@ -43,10 +46,10 @@
     font-weight: $regular;
     letter-spacing: 0.1em;
     line-height: 2;
-    margin-bottom: 30px;
+    margin-bottom: rem(30);
     @include mq(lg) {
         font-size: rem(16);
-        margin-bottom: rem(28);
+        margin-bottom: rem(44);
         letter-spacing: 0.35em;
     }
 }
@@ -56,9 +59,9 @@
     font-size: 12px;
     font-weight: $semibold;
     letter-spacing: 0.24em;
-    line-height:1.16;
+    line-height: 1.16;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: rem(20);
     @include mq(lg) {
         font-size: rem(20);
         margin-bottom: rem(11);
@@ -69,12 +72,29 @@
 .co-creation__statement-text {
     font-size: 13px;
     font-weight: $bold;
-    letter-spacing: 0.24em;
+    letter-spacing: 0.08em;
     line-height: 2;
     @include mq(lg) {
-        font-size: rem(20);
+        font-size: rem(16);
         font-weight: $semibold;
         line-height: 2.5;
-        letter-spacing: 0.24em;
+        letter-spacing: 0.01em;
+    }
+}
+
+.co-creation__vertical-text {
+    display: none;
+    @include mq(md) {
+        display: block;
+        position: absolute;
+        top: 30%;
+        right: -13%;
+        transform: translate(-50%);
+        font-family: $montserrat;
+        font-size: rem(30);
+        text-transform: uppercase;
+        color: $white;
+        writing-mode: vertical-rl;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
 }

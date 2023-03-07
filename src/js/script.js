@@ -13,6 +13,17 @@ const mySwiper = new Swiper('.swiper', {
     },
 });
 
+//無限スライダー
+// const infinite = new Swiper(".infinite", {
+//     loop: true, // ループ有効
+//     slidesPerView: 'auto', // 一度に表示する枚数
+//     speed: 5000, // ループの時間
+//     allowTouchMove: false, // スワイプ無効
+//     autoplay: {
+//       delay: 0, // 途切れなくループ
+//     },
+//   });
+
 //ドロワーメニュー
 $("#js-hamburger").click(function () {
     // $(".l-drawer-menu").toggleClass("is-show");
@@ -31,8 +42,58 @@ gsap.utils.toArray(".panel").forEach((panel, i) => {
     ScrollTrigger.create({
         trigger: panel,
         start: "top top",
-        end: "top .co-creation__ttl",
+        // end: "top .co-creation__ttl",
         pin: true,
         pinSpacing: false,
     });
 });
+
+ScrollTrigger.create({
+    snap: 0// snap whole page to the closest section!
+  });
+
+// スクロールのドラッグ有効化
+jQuery.prototype.mousedragscrollable = function () {
+    let target;
+    $(this).each(function (i, e) {
+        $(e).mousedown(function (event) {
+            event.preventDefault();
+            target = $(e);
+            $(e).data({
+                down: true,
+                move: false,
+                x: event.clientX,
+                y: event.clientY,
+                scrollleft: $(e).scrollLeft(),
+                scrolltop: $(e).scrollTop(),
+            });
+            return false;
+        });
+        $(e).click(function (event) {
+            if ($(e).data("move")) {
+                return false;
+            }
+        });
+    });
+    $(document)
+        .mousemove(function (event) {
+            if ($(target).data("down")) {
+                event.preventDefault();
+                let move_x = $(target).data("x") - event.clientX;
+                let move_y = $(target).data("y") - event.clientY;
+                if (move_x !== 0 || move_y !== 0) {
+                    $(target).data("move", true);
+                } else {
+                    return;
+                }
+                $(target).scrollLeft($(target).data("scrollleft") + move_x);
+                $(target).scrollTop($(target).data("scrolltop") + move_y);
+                return false;
+            }
+        })
+        .mouseup(function (event) {
+            $(target).data("down", false);
+            return false;
+        });
+};
+$(".about-us__sub-contents-wrap").mousedragscrollable();

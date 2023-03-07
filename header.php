@@ -59,3 +59,4 @@
     </div><!--header__inner-->
     <div class="header__page-scroll"></div>
   </header>
+  <div class="header-spacer"></div><!-- /.header-spacer -->

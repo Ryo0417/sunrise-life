@@ -4,39 +4,62 @@
     position: relative;
 }
 
+.recruit__bg {
+    background-image: url(../img/top/sp_bg_top_recruit.jpg);  
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: rem(375);
+    @include mq('sm') {
+        aspect-ratio: 1440/ 781;
+        width: 100%;
+        height: 50%;
+        background-image: url(../img/top/bg_top_recruit.jpg);  
+    }
+}
+
 .recruit__inner {}
 
 .recruit__contents {
     position: absolute;
     background-color: rgba(255, 255, 255, 0.7);
-    width: 70%;
+    width: 84%;
     left: 50%;
     transform: translateX(-50%);
-    top: 25%;
-    padding: rem(30);
+    top: 61%;
+    padding: rem(32);
     @include mq('md') {
         width: rem(856);
         height: rem(426);
-        padding: rem(40);
-        top: 54%;
+        padding: rem(88);
+        top: 63%;
     }
 }
 
 .recruit__ttl {
-    margin-bottom: rem(40);
     color: $green;
-    font-size: rem(45);
     text-transform: uppercase;
     text-align: center;
+    font-size: rem(26);
+    margin-bottom: rem(18);
+    letter-spacing: 0.11em;
+    
+    @include mq('md') {
+        margin-bottom: rem(16);
+        font-size: rem(45);  
+    }
 }
 
 .recruit__text {
-    margin-bottom: rem(50);
     text-align: center;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 2;
-    @include mq('lg') {
+    margin-bottom: rem(30);
+    @include mq('md') {
+       margin-bottom: rem(40);
        font-size: rem(16); 
+       letter-spacing: 0.05em;
     }
 }
 
@@ -44,14 +67,10 @@
 .recruit__button-area {
     display: flex;
     justify-content: center;
+    @include mq('md') {
+       margin-left: rem(10); 
+    }
 }
 
 .recruit__button-top {}
 
-.recruit__bg {
-    background-image: url(../img/top/bg_top_recruit.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    aspect-ratio: 1440/781;
-}

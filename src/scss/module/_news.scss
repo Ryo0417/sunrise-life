@@ -1,47 +1,57 @@
 @use 'global' as *;
 
 .news {
-    margin-bottom: rem(300);
-    background-color: lightblue;
 }
 
 .news__inner {
-    padding-left: $padding-sp;
+    padding-left: $padding-sp + 10px;
     padding-right: $padding-sp;
 }
 
 .news__contents {
     margin-bottom: rem(40);
-    @include mq('lg') {
-       max-width: rem(1080);
+    @include mq('md') {
+       max-width: rem(1048);
        width: 100%;
        margin-inline: auto;
-       margin-bottom: rem(130);
+       margin-bottom: rem(68);
     }
 }
 
 .news__ttl {
     color: $blue;
-    font-size: rem(45);
-    margin-bottom: rem(74);
     text-transform: uppercase;
     text-align: center;
+    font-size: rem(26);
+    letter-spacing: 0.11em;
+    padding-bottom: rem(32);
+    
+    @include mq('md') {
+        font-size: rem(45);
+        margin-bottom: rem(24);  
+    }
 }
 
 .news__item {
     border-bottom: 1px solid #ededed;
-    margin-top: rem(34);
-    padding-bottom: rem(34);  
     position: relative; 
+    padding-bottom: rem(16);  
+    margin-bottom: rem(4);
 
-    @include mq('lg') {
+    @include mq('md') {
+        padding-bottom: rem(28);
        display: flex; 
     }
 }
 
-
 .news__item + .news__item {
+    padding-bottom: rem(10);
+    margin-bottom: rem(12);
 
+    @include mq('md') {
+        margin-top: rem(36);
+        padding-bottom: rem(28);
+    }
 }
 
 .news__item:last-child {
@@ -49,7 +59,10 @@
 }
 
 .news__date {
-    font-size: 14px;
+    font-size: 13px;
+    margin-bottom: rem(6);
+    display: inline-block;
+
     @include mq('lg') {
         margin-right: rem(30);
         font-size: rem(14);
@@ -58,7 +71,7 @@
 
 .news__wrapper {
     width: 100%;
-    @include mq('lg') {
+    @include mq('md') {
        display: flex; 
     }
 }
@@ -66,9 +79,10 @@
 .news__index {  
     font-weight: $bold;
     display: inline-block;
-    width: 70%;
-    font-size: 14px;
-    line-height: 1;
+    width: 94%;
+    font-size: 13px;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
 
     @include mq('md') {
        width: 70%; 
@@ -87,5 +101,9 @@
 .news__button-area {
     display: flex;
     justify-content: center;
+    margin-top: rem(-10);
+    @include mq('md') {
+       margin-top: rem(-14)
+    }
 }
 
