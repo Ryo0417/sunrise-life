@@ -1,7 +1,7 @@
 @use "global" as *;
 .layout-sub-member {
-  margin-top: rem(100);
+  margin-top: rem(97);
   @include mq("md") {
-    margin-top: rem(300);
+    margin-top: rem(297);
   }
 }

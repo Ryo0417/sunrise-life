@@ -1,10 +1,13 @@
 @use "global" as *;
 .sub-message {
-  padding-top: rem(60);
+  padding-top: rem(54);
+  @include mq("md") {
+    padding-top: rem(136);
+  }
 }
 
 .sub-message__inner {
-  padding-left: rem(30);
+  padding-left: rem(33);
   overflow: hidden;
   @include mq("md") {
     padding-left: rem(180);
@@ -13,6 +16,7 @@
 
 .sub-message__head {
   font-size: rem(30);
+  font-family: $montserrat;
   font-weight: $semibold;
   color: $orange;
   letter-spacing: 0.1em;
@@ -27,10 +31,11 @@
   margin-left: calc(100% - 100vw);
   display: flex;
   width: 734px;
-  margin-top: rem(60);
+  margin-top: rem(50);
   @include mq("md") {
     width: 1526px;
     height: 104px;
+    margin-top: rem(83);
   }
 }
 
@@ -62,10 +67,20 @@
   @include mq("md") {
     max-width: rem(1440);
     padding-left: rem(180);
-    margin: rem(83) auto 0;
+    margin: rem(78) auto 0;
   }
 }
 
-.sub-message__company + .sub-message__company {
-  margin-top: rem(100);
+.sub-message__company:nth-child(2){
+  margin-top: rem(123);
+  @include mq("md") {
+    margin-top: rem(293);
+  }
+}
+
+.sub-message__company:last-child {
+  margin-top: rem(99);
+  @include mq("md") {
+    margin-top: rem(294);
+  }
 }

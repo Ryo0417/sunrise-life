@@ -68,6 +68,10 @@
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/message/message-name2.png" alt="社長の名前">
             </figure>
           </div>
+          <h3 class="sub-company__ceo u-mobile">
+              <p>永戸 康弘</p>
+              <span>行政書士法人ライフ 代表社員</span>
+            </h3>
           <div class="sub-company__body u-desktop">
             <figure class="sub-company__name-img">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/message/message-name2.png" alt="社長の名前">
@@ -99,6 +103,10 @@
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/message/message-name3.png" alt="社長の名前">
             </figure>
           </div>
+          <h3 class="sub-company__ceo u-mobile">
+              <p>藤本 佐登子</p>
+              <span>株式会社ライフプラス 代表取締役</span>
+            </h3>
           <div class="sub-company__body u-desktop">
             <figure class="sub-company__name-img">
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/message/message-name3.png" alt="社長の名前">
@@ -110,10 +118,10 @@
           </div>
         </div>
         <p class="sub-company__desc">
-          当たり前だった生活が、思うようにできなくなってしまった時、誰もがご家族や周囲の皆様の手助けが必要となることがあります。
-          大きな変化はご本人だけではなく、力を添える皆様の生活も変えてしまう事があります。
-          私たちライフプラスではそんな皆様のお気持ちに寄り添い、お客様が抱える問題の解決を目指し、高い提案力でサポートいたします。
-          今を楽しみ、明日の楽しみを見つけて頂くことが私たちの願いです。
+          当たり前だった生活が、思うようにできなくなってしまった時、誰もがご家族や周囲の皆様の手助けが必要となることがあります。<br>
+          大きな変化はご本人だけではなく、力を添える皆様の生活も変えてしまう事があります。<br>
+          私たちライフプラスではそんな皆様のお気持ちに寄り添い、お客様が抱える問題の解決を目指し、高い提案力でサポートいたします。<br>
+          今を楽しみ、明日の楽しみを見つけて頂くことが私たちの願いです。<br>
           これからもその気持ちを忘れることなく、｢私たちには何ができるだろう｣を考えながら、社会から必要とされる会社を目指してまいります。
         </p>
       </div>

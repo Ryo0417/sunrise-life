@@ -1,18 +1,20 @@
 @use "global" as *;
 .sub-company__name {
   font-size: rem(17);
+  font-family: $montserrat;
   font-weight: $semibold;
   letter-spacing: 0.1em;
   margin-right: rem(30);
-  margin-bottom: rem(25);
-  margin-left: rem(30);
-  padding-bottom: rem(17);
+  margin-bottom: rem(24);
+  margin-left: rem(35);
+  padding-bottom: rem(10);
   border-bottom: 1px solid #EDEDED;
   position: relative;
   @include mq("md") {
     font-size: rem(28);
-    padding-bottom: rem(40);
+    padding-bottom: rem(31);
     margin-left: 0;
+    margin-bottom: rem(37);
   }
 }
 
@@ -32,10 +34,11 @@
 .sub-company__link {
   display: flex;
   align-items: center;
-  padding-left: rem(30);
-  margin-bottom: rem(94);
+  padding-left: rem(36);
+  margin-bottom: 25%;
   @include mq("md") {
     padding-left: 0;
+    margin-bottom: 3%;
   }
 }
 
@@ -51,16 +54,20 @@
 .sub-company__link a {
   display: block;
   font-size: rem(14);
+  font-family: $montserrat;
   font-weight: $semibold;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   margin-left: rem(12);
+  @include mq("md") {
+    margin-left: rem(20);
+  }
 }
 
 .sub-company__content {
   @include mq("md") {
     display: flex;
-    align-items: center;
+    // align-items: center;
     flex-direction: row-reverse;
   }
 }
@@ -77,9 +84,10 @@
 .sub-company__name-img {
   content: "";
   position: absolute;
-  top: -13%;
-  left: -17%;
-  width: calc(236 / 375) * 100%;
+  top: -18%;
+  left: -20%;
+  // width: calc(236 / 375) * 100%;
+  width: max(70%, 236px);
   height: rem(68);
   @include mq("md") {
     position: static;
@@ -89,11 +97,11 @@
 }
 
 .sub-company__ceo {
-  padding-left: rem(30);
-  margin-top: rem(50);
+  padding-left: rem(33);
+  margin-top: rem(45);
   @include mq("md") {
     padding-left: 0;
-    margin-top: rem(57);
+    margin-top: rem(68);
   }
 }
 
@@ -112,10 +120,10 @@
   font-weight: $regular;
   line-height: 1.63;
   letter-spacing: 0.1em;
-  margin-top: rem(10);
+  margin-top: rem(6);
   @include mq("md") {
     font-size: rem(13);
-    margin-top: rem(18);
+    margin-top: rem(10);
   }
 }
 
@@ -124,6 +132,7 @@
     margin-right: rem(-170);
     position: relative;
     z-index: 1;
+    padding-top: 9%;
   }
 }
 
@@ -144,7 +153,7 @@
     padding: rem(130) rem(180);
     margin-left: rem(-180);
     background: rgba(255, 255, 255, 0.9);
-    margin-top: rem(-80);
+    margin-top: rem(-96);
     position: relative;
   }
 }
