@@ -41,10 +41,10 @@
   overflow: hidden;
   position: relative;
   display: -webkit-box;
-  margin-top: rem(43);
+  margin-top: rem(36);
   @include mq("md") {
     height: 600px;
-    margin-top: rem(70);
+    margin-top: rem(60);
   }
 }
 
