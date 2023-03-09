@@ -1,0 +1,7 @@
+@use "global" as *;
+.layout-sub-business {
+  margin-top: rem(100);
+  @include mq("md") {
+    margin-top: rem(290);
+  }
+}

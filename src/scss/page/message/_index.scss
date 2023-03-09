@@ -1,7 +1,7 @@
 @use 'sass:meta';
 
-// .page-id-5 {
-//   // ページ内のcssをここに追加する
-//   @include meta.load-css('sub-message');
-//   @include meta.load-css('sub-company');
-// }
+.page-id-5 {
+  // ページ内のcssをここに追加する
+  @include meta.load-css('sub-message');
+  @include meta.load-css('sub-company');
+}

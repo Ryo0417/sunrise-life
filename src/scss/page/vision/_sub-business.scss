@@ -1,0 +1,129 @@
+@use "global" as *;
+.sub-business {
+  padding-bottom: rem(100);
+}
+
+.sub-business__bg {
+  background: url(../img/top/bg_top_vision_img.jpg) no-repeat center center /
+    cover;
+  padding: rem(80) 0;
+  width: 100%;
+}
+
+.sub-business__reception {
+  width: calc(345 / 375) * 100%;
+}
+
+.sub-business__desc {
+  width: calc(345 / 375) * 100%;
+  padding: rem(50) rem(41);
+  margin-left: auto;
+  margin-top: rem(-40);
+  background-color: $white;
+  position: relative;
+}
+
+.sub-business__head {
+  font-size: rem(18);
+  font-weight: $bold;
+  letter-spacing: 0.01em;
+}
+
+.sub-business__text {
+  font-size: rem(12);
+  font-weight: $regular;
+  line-height: calc(25 / 12);
+  letter-spacing: 0.1em;
+  margin-top: rem(20);
+}
+
+.sub-business__content {
+  margin: rem(100) auto 0;
+}
+
+.sub-business__target {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 rem(48);
+}
+
+.sub-business__target + .sub-business__target {
+  margin-top: rem(80);
+}
+
+.sub-business__dot1 {
+  width: rem(24);
+}
+
+.sub-business__dot2 {
+  width: rem(36);
+}
+
+.sub-business__dot3 {
+  width: rem(48);
+}
+
+.sub-business__year {
+  font-size: rem(18);
+  font-weight: $semibold;
+  letter-spacing: 0.05em;
+  margin-top: rem(30);
+}
+
+.sub-business__year span {
+  font-size: rem(11);
+}
+
+.sub-business__head {
+  width: rem(279);
+  margin-top: rem(16);
+}
+
+.sub-business__sub-head {
+  font-size: rem(12);
+  font-weight: $semibold;
+  letter-spacing: 0.1em;
+  margin-top: rem(15);
+}
+
+.sub-business__accent {
+  display: block;
+  width: rem(21);
+  height: rem(4);
+  margin-top: rem(30);
+  border-radius: 20px;
+}
+
+.sub-business__accent.sub-business__accent--yellow {
+  background-color: $yellow;
+}
+
+.sub-business__accent.sub-business__accent--blue {
+  background-color: $blue;
+}
+
+.sub-business__accent.sub-business__accent--green {
+  background-color: $green;
+}
+
+.sub-business__subject {
+  font-size: rem(14);
+  font-weight: $regular;
+  line-height: calc(27 / 14);
+  letter-spacing: 0.1em;
+  margin-top: rem(25);
+}
+
+.sub-business__guidelines {
+  margin-top: rem(100);
+}
+
+.sub-business__guideline {
+  padding-left: rem(30);
+  padding-right: rem(30);
+}
+
+.sub-business__guideline + .sub-business__guideline {
+  margin-top: rem(100);
+}
