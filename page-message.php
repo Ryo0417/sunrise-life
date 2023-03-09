@@ -3,7 +3,7 @@
   <div class="sub-message__bg-circle common-bg-circle">
     <section class="sub-message">
       <div class="sub-message__inner">
-        <h1 class="sub-message__head">message</h1>
+        <h1 class="sub-message__head sub-common-head">message</h1>
         <div class="sub-message__reception">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/message/message-enterprise-sp.svg" alt="グループエンタープライズ">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/message/message-enterprise-sp.svg" alt="グループエンタープライズ">

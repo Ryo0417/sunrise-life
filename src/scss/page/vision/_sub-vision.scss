@@ -1,0 +1,65 @@
+@use "global" as *;
+.sub-vision {
+  padding-top: rem(60);
+}
+
+.sub-vision__content {
+  overflow: hidden;
+}
+
+.sub-vision__reception {
+  display: flex;
+  width: 886px;
+  margin-top: rem(60);
+}
+
+.sub-vision__reception img:first-child {
+  animation: loop 30s -15s linear infinite;
+  padding-left: rem(25);
+  padding-right: rem(25);
+}
+
+.sub-vision__reception img:not(:first-child) {
+  animation: loop2 30s linear infinite;
+  padding-left: rem(25);
+  padding-right: rem(25);
+}
+
+.sub-vision__copy {
+  font-size: rem(20);
+  font-weight: $bold;
+  line-height: 1.7;
+  letter-spacing: 0.2em;
+  padding-left: rem(30);
+  padding-right: rem(30);
+  margin-top: rem(40);
+}
+
+.sub-vision__img {
+  width: rem(345);
+  padding-left: rem(15);
+  padding-right: rem(15);
+  margin: 0 auto;
+}
+
+.sub-vision__body {
+  padding-left: rem(40);
+  padding-right: rem(40);
+  margin: rem(100) auto 0;
+}
+
+.sub-vision__title {
+  font-size: rem(18);
+  font-weight: $bold;
+  color: $green;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.1em;
+}
+
+.sub-vision__text {
+  font-size: rem(14);
+  font-weight: $regular;
+  line-height: calc(27 / 14);
+  letter-spacing: 0.1em;
+  margin-top: rem(30);
+}

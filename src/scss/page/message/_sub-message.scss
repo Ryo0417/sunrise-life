@@ -14,19 +14,6 @@
   }
 }
 
-.sub-message__head {
-  font-size: rem(30);
-  font-family: $montserrat;
-  font-weight: $semibold;
-  color: $orange;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  @include mq("md") {
-    font-size: rem(45);
-    line-height: 1;
-  }
-}
-
 .sub-message__reception {
   margin-left: calc(100% - 100vw);
   display: flex;
