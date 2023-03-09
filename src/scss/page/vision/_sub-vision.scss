@@ -1,16 +1,52 @@
 @use "global" as *;
 .sub-vision {
   padding-top: rem(60);
+  @include mq("md") {
+    padding-top: rem(130);
+  }
+}
+
+.sub-vision__inner {
+  @include mq("md") {
+    max-width: rem(1130);
+    width: 100%;
+    padding-left: rem(25);
+    padding-right: rem(25);
+    margin: 0 auto;
+  }
 }
 
 .sub-vision__content {
   overflow: hidden;
 }
 
+.sub-vision__head {
+  padding-left: rem(30);
+  @include mq("md") {
+    max-width: rem(1130);
+    width: 100%;
+    padding-left: rem(25);
+    padding-right: rem(25);
+    margin: 0 auto;
+  }
+}
+
 .sub-vision__reception {
   display: flex;
   width: 886px;
   margin-top: rem(60);
+  @include mq("md") {
+    // position: absolute;
+    // top: 195px;
+    width: 1844px;
+    height: rem(104);
+  }
+}
+
+.sub-vision__reception img {
+  @include mq("md") {
+    width: 100%;
+  }
 }
 
 .sub-vision__reception img:first-child {
@@ -33,6 +69,17 @@
   padding-left: rem(30);
   padding-right: rem(30);
   margin-top: rem(40);
+  @include mq("md") {
+    font-size: rem(43);
+    font-weight: $bold;
+    line-height: 1.7;
+    letter-spacing: 0.2em;
+    max-width: rem(1130);
+    width: 100%;
+    padding-left: rem(25);
+    padding-right: rem(25);
+    margin: rem(-140) auto 0;
+  }
 }
 
 .sub-vision__img {
@@ -40,12 +87,23 @@
   padding-left: rem(15);
   padding-right: rem(15);
   margin: 0 auto;
+  @include mq("md") {
+    max-width: rem(1080);
+    width: 100%;
+  }
 }
 
 .sub-vision__body {
   padding-left: rem(40);
   padding-right: rem(40);
   margin: rem(100) auto 0;
+  @include mq("md") {
+    max-width: rem(1130);
+    width: 100%;
+    padding-left: rem(25);
+    padding-right: rem(25);
+    margin-top: rem(140);
+  }
 }
 
 .sub-vision__title {
@@ -54,6 +112,10 @@
   color: $green;
   line-height: calc(30 / 18);
   letter-spacing: 0.1em;
+  @include mq("md") {
+    font-size: rem(28);
+    text-align: center;
+  }
 }
 
 .sub-vision__text {
@@ -62,4 +124,12 @@
   line-height: calc(27 / 14);
   letter-spacing: 0.1em;
   margin-top: rem(30);
+  @include mq("md") {
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: calc(40 / 16);
+    letter-spacing: 0.08em;
+    text-align: justify;
+    margin-top: rem(60);
+  }
 }

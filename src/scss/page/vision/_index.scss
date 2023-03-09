@@ -1,0 +1,8 @@
+@use 'sass:meta';
+.page-id-8 {
+    // ページ内のcssをここに追加する
+    @include meta.load-css('_layout-sub-business');
+    @include meta.load-css('_sub-business');
+    @include meta.load-css('_sub-guideline');
+    @include meta.load-css('_sub-vision');
+}

@@ -31,9 +31,12 @@
     <!-- ビジネスエコシステム -->
     <section class="sub-business layout-sub-business">
       <div class="sub-business__bg">
-        <figure class="sub-business__reception">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/vision/ecosystem.png" alt="ビジネスエコシステムあしらい">
-        </figure>
+        <div class="sub-business__body-wrapper">
+
+          <figure class="sub-business__reception">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/vision/ecosystem.png" alt="ビジネスエコシステムあしらい">
+          </figure>
+        </div>
         <div class="sub-business__desc">
           <h2 class="sub-business__head">ビジネスエコシステムとは</h2>
           <p class="sub-business__text">
@@ -84,18 +87,24 @@
           <p class="sub-business__subject">社会問題解決のため<br>新たな社会的価値を生み出す</p>
         </div>
       </div><!-- sub-business__content -->
+      <p class="sub-business__content">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/vision/vision-transition.svg" alt="ビジョン画像">
+      </p>
 
       <div class="sub-business__guidelines">
         <div class="sub-business__guideline sub-guideline">
           <figure class="sub-guideline__feature">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/vision/vision-2025.jpg" alt="2025年のイメージ">
           </figure>
-          <picture class="sub-guideline__year">
+          <picture class="sub-guideline__year sub-guideline-sp">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/vision/2025-sp.svg" media="(max-width: 767px)">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/vision/2025-pc.svg" media="(min-width: 768px)">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/vision/2025-pc.svg" alt="2025年">
           </picture>
           <div class="sub-guideline__body">
+            <figure class="sub-guideline__year sub-guideline-pc">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/vision/2025-pc.svg" alt="2025年">
+            </figure>
             <h2 class="sub-guideline__head">ビシネスエコシステムの構築</h2>
             <p class="sub-guideline__text">
               多くの専門家たちの扱う知識は各専門領域内において優れた力を発揮していますが、それぞれの領域を横断するにまでは現在至っておりません。<br>
@@ -109,12 +118,15 @@
           <figure class="sub-guideline__feature">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/vision/vision-2030.jpg" alt="2030年のイメージ">
           </figure>
-          <picture class="sub-guideline__year">
+          <picture class="sub-guideline__year sub-guideline-sp">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/vision/2030-sp.svg" media="(max-width: 767px)">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/vision/2030-pc.svg" media="(min-width: 768px)">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/vision/2030-pc.svg" alt="2030年">
           </picture>
           <div class="sub-guideline__body">
+            <figure class="sub-guideline__year sub-guideline-pc">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/vision/2030-pc.svg" alt="2030年">
+            </figure>
             <h2 class="sub-guideline__head sub-guideline__head--blue">コミュニティビジネスの創出</h2>
             <p class="sub-guideline__text">
               さまざまなアライアンスを構築した土台を基に携わる領域を拡大し、個人のお悩みだけでなく、地域社会の抱える課題やすでに諦めている課題に取り組みます。<br>
@@ -127,12 +139,15 @@
           <figure class="sub-guideline__feature">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/vision/vision-2035.jpg" alt="2035年のイメージ">
           </figure>
-          <picture class="sub-guideline__year">
+          <picture class="sub-guideline__year sub-guideline-sp">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/vision/2035-sp.svg" media="(max-width: 767px)">
             <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/vision/2035-pc.svg" media="(min-width: 768px)">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/vision/2035-pc.svg" alt="2035年">
           </picture>
           <div class="sub-guideline__body">
+            <figure class="sub-guideline__year sub-guideline-pc">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/vision/2035-pc.svg" alt="2035年">
+            </figure>
             <h2 class="sub-guideline__head sub-guideline__head--green">ソーシャルビジネスへの進化</h2>
             <p class="sub-guideline__text">
               世界情勢や価値観の変化など私たちを取り巻く環境は刻々と表情を変えていきます。<br>
