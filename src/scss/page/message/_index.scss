@@ -4,4 +4,6 @@
   // ページ内のcssをここに追加する
   @include meta.load-css('sub-message');
   @include meta.load-css('sub-company');
+  @include meta.load-css('sub-member');
+  @include meta.load-css('layout-sub-member');
 }

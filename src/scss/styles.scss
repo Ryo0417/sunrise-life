@@ -1,5 +1,7 @@
 @use "./base/*";
 @use "./module/*";
-@use "./page/common/*";
-@use "./page/message/*";
-@use "./page/vision/*";
+@use "./cmn/*";
+@use "./page/" as *;
+// @use "./page/common/*";
+// @use "./page/message/*";
+// @use "./page/vision/*";
