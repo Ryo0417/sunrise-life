@@ -29,17 +29,24 @@
   left: rem(10);
   width: rem(116);
   height: rem(54);
+  @include mq("md") {
+    display: none;
+  }
 }
 
 .sub-guideline__year.sub-guideline-pc {
-  position: absolute;
-  top: -13%;
-  left: 100px;
-  width: rem(247);
+  display: none;
+  @include mq("md") {
+    display: block;
+    position: absolute;
+    top: -13%;
+    left: 107px;
+    width: rem(247);
+  }
 }
 
 .sub-guideline__body {
-  padding: rem(60) rem(40) rem(40);
+  padding: rem(56) rem(40) rem(40);
   margin: rem(-70) auto 0;
   background-color: #fff;
   opacity: 0.9;
@@ -47,7 +54,7 @@
   @include mq("md") {
     max-width: rem(1080);
     width: 100%;
-    padding: rem(100) rem(111);
+    padding: rem(94) rem(111);
     margin-top: rem(-260);
   }
 }
@@ -80,7 +87,7 @@
   text-align: justify;
   text-justify: inter-ideograph;
   font-feature-settings: "palt" on;
-  margin-top: rem(40);
+  margin-top: rem(36);
   @include mq("md") {
     font-size: rem(16);
     line-height: calc(40 / 16);
