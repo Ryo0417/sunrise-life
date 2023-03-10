@@ -1,6 +1,6 @@
 @use "global" as *;
 .sub-vision {
-  padding-top: rem(60);
+  padding-top: rem(52);
   @include mq("md") {
     padding-top: rem(130);
   }
@@ -34,7 +34,7 @@
 .sub-vision__reception {
   display: flex;
   width: 886px;
-  margin-top: rem(60);
+  margin-top: rem(53);
   @include mq("md") {
     // position: absolute;
     // top: 195px;
@@ -84,9 +84,7 @@
 
 .sub-vision__img {
   width: rem(345);
-  padding-left: rem(15);
-  padding-right: rem(15);
-  margin: 0 auto;
+  margin: rem(6) auto 0;
   @include mq("md") {
     max-width: rem(1080);
     width: 100%;
@@ -102,7 +100,7 @@
     width: 100%;
     padding-left: rem(25);
     padding-right: rem(25);
-    margin-top: rem(140);
+    margin-top: rem(164);
   }
 }
 
@@ -130,6 +128,6 @@
     line-height: calc(40 / 16);
     letter-spacing: 0.08em;
     text-align: justify;
-    margin-top: rem(60);
+    margin-top: rem(50);
   }
 }

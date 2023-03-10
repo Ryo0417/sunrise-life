@@ -36,16 +36,16 @@
           <figure class="sub-business__reception">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/vision/ecosystem.png" alt="ビジネスエコシステムあしらい">
           </figure>
-        </div>
-        <div class="sub-business__desc">
-          <h2 class="sub-business__head">ビジネスエコシステムとは</h2>
-          <p class="sub-business__text">
-            プラットフォーム事業者（ライフグループ）と、<br>
-            それを補完する事業者（アライアンス）から構成されるグループを「一つの生態系」として表現します。<br>
-            プラットフォームに様々な補完事業者が集まることでより価値が高まり、多くの顧客が集まってきます。<br>
-            そして、そのことが大きなメリットとなりさらに多くの補完事業者が引き付けられるサイクルが循環していきます。<br>
-            ビジョンに向けてまずはこの土台を構築することが必要です。
-          </p>
+          <div class="sub-business__desc">
+            <h2 class="sub-business__head">ビジネスエコシステムとは</h2>
+            <p class="sub-business__text">
+              プラットフォーム事業者（ライフグループ）と、<br>
+              それを補完する事業者（アライアンス）から構成されるグループを「一つの生態系」として表現します。<br>
+              プラットフォームに様々な補完事業者が集まることでより価値が高まり、多くの顧客が集まってきます。<br>
+              そして、そのことが大きなメリットとなりさらに多くの補完事業者が引き付けられるサイクルが循環していきます。<br>
+              ビジョンに向けてまずはこの土台を構築することが必要です。
+            </p>
+          </div>
         </div>
       </div><!-- sub-business__bg -->
 
@@ -55,7 +55,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/vision/eco-25.svg" alt="">
           </figure>
           <time class="sub-business__year">2025<span>年</span></time>
-          <figure class="sub-business__head">
+          <figure class="sub-business__title">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/vision/ecosystem-text.png" alt="ビジネスエコシステム">
           </figure>
           <span class="sub-business__sub-head">ビジネスエコシステム</span>
@@ -67,7 +67,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/vision/eco-30.svg" alt="">
           </figure>
           <time class="sub-business__year">2030<span>年</span></time>
-          <figure class="sub-business__head">
+          <figure class="sub-business__title">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/vision/community-text.png" alt="コミュニティビジネス">
           </figure>
           <span class="sub-business__sub-head">コミュニティビジネス</span>
@@ -79,7 +79,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/vision/eco-35.svg" alt="">
           </figure>
           <time class="sub-business__year">2035<span>年</span></time>
-          <figure class="sub-business__head">
+          <figure class="sub-business__title3">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/vision/social-text.png" alt="ソーシャルビジネス">
           </figure>
           <span class="sub-business__sub-head">ソーシャルビジネス</span>
@@ -87,7 +87,7 @@
           <p class="sub-business__subject">社会問題解決のため<br>新たな社会的価値を生み出す</p>
         </div>
       </div><!-- sub-business__content -->
-      <p class="sub-business__content">
+      <p class="sub-business__content u-desktop">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/vision/vision-transition.svg" alt="ビジョン画像">
       </p>
 
